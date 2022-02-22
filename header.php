@@ -3,11 +3,11 @@
         <div class="header__inner">
             <div class="header__top">
                 <a class="logo__link" href="/">
-                    <img id="logo" src="/img/logo.svg" alt="logo">
+                    <img class="logo" src="/img/logo.svg" alt="logo">
                 </a>
                 <div class="header__contacts">
                     <div class="header__contacts_adress">
-                        г. Калининград, ул. Артиллерийская, 85/4
+                        г. Калининград,<br> ул. Артиллерийская, 85/4
                     </div>
                     <div class="header__contacts_hours">
                         <em>Пн-Пт</em> 7:30-20:00<br>
@@ -17,9 +17,9 @@
                         +7 (4012) 000-000
                     </div>
                 </div>
-                <div class="header__button button">
+                <a href="#" class="header__button button">
                     Записаться на приём
-                </div>
+                </a>
             </div>
             <nav class="header__menu">
                 <div class="header__menu_item" aria-label="0">
