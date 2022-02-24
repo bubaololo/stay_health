@@ -343,6 +343,41 @@
                 </div>
             </div>
         </div>
+        <div class="main__mission">
+            <div class="container">
+                <div class="main__mission_wrapper">
+                    <div class="main__mission_img">
+                        <img class="main__mission_rect" src="img/mission_rect.svg" alt="decorative element">
+                        <div class="main__mission_slogan">
+                            <div class="main__mission_slogan_title">
+                                <div class="main__mission_title-line"></div>
+                                <div class="main__mission_slogan_title-text">
+                                    Наша миссия
+                                </div>
+                            </div>
+                            <div class="main__mission_slogan_text">
+                                Медининский центр “Неболейка” - территория здоровья, где каждый пациент получает индивидуальный комплексный подход и доступ к лучшим мировым медицинским технологиям
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__mission_content">
+                        <div class="main__mission_title">
+                            Семейная клиника “Неболейка”
+
+                        </div>
+                        <div class="main__mission_text">
+                            Клиника специализируется на оказании амбулаторно-поликлинической и лечебно-диагностической помощи. В клинике ведут прием следующие специалисты: педиатр, терапевт, невролог, кардиолог, офтальмолог, врач ультразвуковой диагностики. В нашей клинике можно
+                            сдать любые анализы, воспользоваться услугами процедурного кабинета, поставить прививки детям и взрослым, сделать ЭКГ, холтер ЭКГ и СМАД. Также у нас возможно оформление и выдачи медицинской документации, в том числе и листков
+                            временной нетрудоспособности. Мы создали условия для комфортного обследования и эффективного лечения.
+                        </div>
+                        <a href="#" class="main__mission_button button">
+                            Подробнее о клинике
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/footer.php');
     ?>

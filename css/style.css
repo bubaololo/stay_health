@@ -529,3 +529,107 @@ li {
 .main__docs_button:hover {
     box-shadow: unset;
 }
+
+.main__mission_wrapper {
+    padding-top: 120px;
+    padding-bottom: 210px;
+    display: flex;
+}
+
+.main__mission_img {
+    position: relative;
+    width: 470px;
+    height: 478px;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/mission_background.jpg);
+    box-shadow: 10px 10px 40px 0px #28425026;
+}
+
+.main__mission_rect {
+    position: absolute;
+    bottom: -65px;
+    left: -65px;
+    z-index: -1;
+}
+
+.main__mission_slogan {
+    position: absolute;
+    max-width: 370px;
+    padding: 30px;
+    color: #FFF;
+    background-color: #817BB1;
+    border-radius: 10px;
+    bottom: -88px;
+    right: -100px;
+}
+
+.main__mission_slogan_title {
+    position: relative;
+    text-align: center;
+}
+
+.main__mission_slogan_title-text {
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: #817BB1;
+    padding: 0 21px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 11px;
+}
+
+.main__mission_title-line {
+    position: absolute;
+    height: 1px;
+    top: 12px;
+    width: 100%;
+    z-index: 0;
+    background-color: #B9B4E5;
+}
+
+.main__mission_slogan_text {
+    text-align: center;
+    font-weight: 400;
+}
+
+.main__mission_content {
+    max-width: 667px;
+    margin-left: 33px;
+}
+
+.main__mission_title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 21px;
+    margin-bottom: 11px;
+}
+
+.main__mission_text {
+    margin-bottom: 35px;
+}
+
+.main__mission_button {
+    position: relative;
+    margin-left: 100px;
+    padding-left: 32px;
+    padding-right: 64px;
+}
+
+.main__mission_button::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 18px;
+    right: 27px;
+    top: 21px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/icon_mission_arrow.svg);
+}
