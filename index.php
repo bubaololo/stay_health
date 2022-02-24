@@ -427,6 +427,30 @@
                 </div>
             </div>
         </div>
+        <div class="main__registration">
+            <div class="container">
+                <div class="main__registration_wrapper">
+                    <div class="main__registration_inner">
+                        <div class="registration-circle"></div>
+                        <!-- <img src="img/steto.png" alt="stetoscope image" class="main__registration_steto"> -->
+                        <div class="main__registration_content">
+
+                            <div class="main__registration_title">
+                                Записаться на приём
+                            </div>
+                            <div class="main__registration_text">
+                                Оставьте свои данные и наш администратор свяжется с вами в ближайшее время Либо звоните по телефону <em>+7 (4012) 000-000</em>
+                            </div>
+                            <a href="#" class="main__docs_button button">
+                            Записаться на приём
+                        </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/footer.php');
     ?>
