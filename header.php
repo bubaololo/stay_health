@@ -22,27 +22,27 @@
                 </a>
             </div>
             <nav class="header__menu">
-                <div class="header__menu_item" aria-label="0">
+                <a href="#" class="header__menu_item" aria-label="0">
                     Главная
-                </div>
-                <div class="header__menu_item" aria-label="0">
+                </a>
+                <a href="#" class="header__menu_item" aria-label="0">
                     О клинике
-                </div>
-                <div class="header__menu_item" aria-label="0">
+                </a>
+                <a href="#" class="header__menu_item" aria-label="0">
                     Услуги
-                </div>
-                <div class="header__menu_item" aria-label="0">
+                </a>
+                <a href="#" class="header__menu_item" aria-label="0">
                     Новости
-                </div>
-                <div class="header__menu_item" aria-label="0">
+                </a>
+                <a href="#" class="header__menu_item" aria-label="0">
                     Специалисты
-                </div>
-                <div class="header__menu_item" aria-label="0">
+                </a>
+                <a href="#" class="header__menu_item" aria-label="0">
                     Отзывы
-                </div>
-                <div class="header__menu_item" aria-label="0">
+                </a>
+                <a href="#" class="header__menu_item" aria-label="0">
                     Контакты
-                </div>
+                </a>
             </nav>
 
 

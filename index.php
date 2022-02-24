@@ -10,6 +10,8 @@
     <meta name="description" content="Медицинские услуги для всей семьи">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/hystmodal.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <!-- <link rel="stylesheet" href="css/glider.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/media.css"> -->
@@ -143,7 +145,204 @@
                 </div>
             </div>
         </div>
+        <div class="main__docs">
+            <div class="container">
+                <div class="main__docs_top_content">
+                    <h2 class="main__docs_top-title">У нас работают врачи высшей категории</h2>
+                    <div class="main__docs_top-text">с опытом от 5 лет</div>
+                </div>
+                <div class="main__docs_slider">
+                    <div class="main__docs_slider_left">
+                        <a href="#_1" class="main__docs_handler_item">
+                            <img src="img/doc1.jpg" alt="" class="main__docs_handler_ava">
+                            <div class="main__docs_handler_text">
+                                <div class="main__docs_handler_surname">
+                                    Верещагина
+                                </div>
+                                <div class="main__docs_handler_name">
+                                    Юлия Андреевна
+                                </div>
+                                <div class="main__docs_handler_spec">
+                                    Педиатр
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#_2" class="main__docs_handler_item">
+                            <img src="img/doc2.jpg" alt="" class="main__docs_handler_ava">
+                            <div class="main__docs_handler_text">
+                                <div class="main__docs_handler_surname">
+                                    Верещагин
+                                </div>
+                                <div class="main__docs_handler_name">
+                                    Андрей Николаевич
+                                </div>
+                                <div class="main__docs_handler_spec">
+                                    Терапевт
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#_3" class="main__docs_handler_item">
+                            <img src="img/doc3.jpg" alt="" class="main__docs_handler_ava">
+                            <div class="main__docs_handler_text">
+                                <div class="main__docs_handler_surname">
+                                    Олишевская
+                                </div>
+                                <div class="main__docs_handler_name">
+                                    Анна Александровна
+                                </div>
+                                <div class="main__docs_handler_spec">
+                                    Невролог
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#_4" class="main__docs_handler_item">
+                            <img src="img/doc4.jpg" alt="" class="main__docs_handler_ava">
+                            <div class="main__docs_handler_text">
+                                <div class="main__docs_handler_surname">
+                                    Канц
+                                </div>
+                                <div class="main__docs_handler_name">
+                                    Алёна Петровна
+                                </div>
+                                <div class="main__docs_handler_spec">
+                                    Эндокринолог
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#_5" class="main__docs_handler_item">
+                            <img src="img/doc1.jpg" alt="" class="main__docs_handler_ava">
+                            <div class="main__docs_handler_text">
+                                <div class="main__docs_handler_surname">
+                                    Верещагина
+                                </div>
+                                <div class="main__docs_handler_name">
+                                    Юлия Андреевна
+                                </div>
+                                <div class="main__docs_handler_spec">
+                                    Педиатр
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#_6" class="main__docs_handler_item">
+                            <img src="img/doc1.jpg" alt="" class="main__docs_handler_ava">
+                            <div class="main__docs_handler_text">
+                                <div class="main__docs_handler_surname">
+                                    Верещагина
+                                </div>
+                                <div class="main__docs_handler_name">
+                                    Юлия Андреевна
+                                </div>
+                                <div class="main__docs_handler_spec">
+                                    Педиатр
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main__docs_slider_right owl-carousel">
+                        <div class="main__docs_info" data-hash="_1">
+                            <div class="main__docs_info_wrapper">
+                                <div class="main__docs_info_top">
+                                    <div class="main__docs_photo main_doc1"></div>
+                                    <div class="main__docs_content">
+                                        <div class="main__docs_info_surname">
+                                            Верещагина
+                                        </div>
+                                        <div class="main__docs_info_name">
+                                            Юлия Андреевна
+                                        </div>
+                                        <div class="main__docs_info_spec">
+                                            Врач-педиатр.
+                                        </div>
+                                        <div class="main__docs_info_exp">
+                                            Стаж работы 25 лет
+                                        </div>
+                                        <div class="main__docs_info_title">
+                                            Информация о специалисте:
+                                        </div>
+                                        <div class="main__docs_info_line">
+                                            <div class="main__docs_info_line-green"></div>
+                                        </div>
+                                        <div class="main__docs_info_text">
+                                            Образование: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt pulvinar interdum proin nisl urna dui, ut purus. Pulvinar facilisis adipiscing nibh arcu. Ultricies tellus
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="main__docs_button button">
+                                    Записаться на приём
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__docs_info" data-hash="_2">
+                            <div class="main__docs_info_wrapper">
+                                <div class="main__docs_info_top">
+                                    <div class="main__docs_photo main_doc2"></div>
+                                    <div class="main__docs_content">
+                                        <div class="main__docs_info_surname">
+                                            Иванов
+                                        </div>
+                                        <div class="main__docs_info_name">
+                                            Василий Петрович
+                                        </div>
+                                        <div class="main__docs_info_spec">
+                                            Врач-педиатр.
+                                        </div>
+                                        <div class="main__docs_info_exp">
+                                            Стаж работы 25 лет
+                                        </div>
+                                        <div class="main__docs_info_title">
+                                            Информация о специалисте:
+                                        </div>
+                                        <div class="main__docs_info_line">
+                                            <div class="main__docs_info_line-green"></div>
+                                        </div>
+                                        <div class="main__docs_info_text">
+                                            Образование: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt pulvinar interdum proin nisl urna dui, ut purus. Pulvinar facilisis adipiscing nibh arcu. Ultricies tellus
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="main__docs_button button">
+                                    Записаться на приём
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__docs_info" data-hash="_3">
+                            <div class="main__docs_info_wrapper">
+                                <div class="main__docs_info_top">
+                                    <div class="main__docs_photo main_doc3"></div>
+                                    <div class="main__docs_content">
+                                        <div class="main__docs_info_surname">
+                                            Сидорова
+                                        </div>
+                                        <div class="main__docs_info_name">
+                                            Елена Петровна
+                                        </div>
+                                        <div class="main__docs_info_spec">
+                                            Врач-педиатр.
+                                        </div>
+                                        <div class="main__docs_info_exp">
+                                            Стаж работы 25 лет
+                                        </div>
+                                        <div class="main__docs_info_title">
+                                            Информация о специалисте:
+                                        </div>
+                                        <div class="main__docs_info_line">
+                                            <div class="main__docs_info_line-green"></div>
+                                        </div>
+                                        <div class="main__docs_info_text">
+                                            Образование: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt pulvinar interdum proin nisl urna dui, ut purus. Pulvinar facilisis adipiscing nibh arcu. Ultricies tellus
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="main__docs_button button">
+                                    Записаться на приём
+                                </a>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
         <?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/footer.php');
     ?>
@@ -151,6 +350,8 @@
 
 
             <!-- <script src="js/glider.js" type="text/javascript"></script> -->
+            <script src="/js/jquery-3.6.0.min.js"></script>
+            <script src="/js/owl.carousel.min.js"></script>
             <script src="/js/hystmodal.min.js"></script>
             <script src="/js/main.js"></script>
 

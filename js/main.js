@@ -24,47 +24,28 @@ const myModal = new HystModal({
 
 
 
-// PHP_MAILER______________________
-
-function send(event, php) {
-    // console.log("Отправка запроса");
-    event.preventDefault ? event.preventDefault() : event.returnValue = false;
-    var req = new XMLHttpRequest();
-    req.open('POST', php, true);
-    req.onload = function() {
-        if (req.status >= 200 && req.status < 400) {
-            json = JSON.parse(this.response); // Ебанный internet explorer 11
 
 
-            // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
-            if (json.result == "success") {
-                // Если сообщение отправлено
-                document.getElementById("form").reset();
-                document.getElementById("main_form_close").click()
-                myModal.open('#confirm');
-            } else {
-                // Если произошла ошибка
-                alert("Ошибка. Сообщение не отправлено");
-            }
-            // Если не удалось связаться с php файлом
-        } else { alert("Ошибка сервера. Номер: " + req.status); }
-    };
 
-    // Если не удалось отправить запрос. Стоит блок на хостинге
-    req.onerror = function() { alert("Ошибка отправки запроса"); };
-    req.send(new FormData(event.target));
-};
-var typed = new Typed("#typed", {
-    stringsElement: '#typed-strings',
-    typeSpeed: 50,
-    backSpeed: 15,
-    backDelay: 500,
-    startDelay: 1000,
-    loop: true,
+
+$(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: false,
+        center: false,
+        margin: 0,
+        URLhashListener: true,
+        startPosition: '#_1',
+        mouseDrag: false,
+        touchDrag: false,
+        animateOut: 'fadeOut',
+        dots: false,
+
+
+
+
+    });
 });
-
-
-
 
 
 // FAQ ACCORDEON________________________________________
