@@ -38,8 +38,8 @@
                         здоровьем, проведут грамотную диагностику и назначат эффективный курс лечения.
                     </div>
                     <a href="#" class="main__banner-button button">
-                        Записаться на приём
-                    </a>
+                    Записаться на приём
+                </a>
                 </div>
             </div>
         </div>
@@ -102,8 +102,8 @@
                                 У нас ведут прием специалисты с больщим стажем работы
                             </div>
                             <a href="#" class="card__link">
-                                подробнее
-                            </a>
+                            подробнее
+                        </a>
                         </div>
                         <div class="card">
                             <img class="card__icon" src="img/card_icon_back.svg" alt="icon">
@@ -114,8 +114,8 @@
                                 Услуги массажиста для детей и взрослых
                             </div>
                             <a href="#" class="card__link">
-                                подробнее
-                            </a>
+                            подробнее
+                        </a>
                         </div>
                         <div class="card">
                             <img class="card__icon" src="img/card_icon_waist.svg" alt="icon">
@@ -126,8 +126,8 @@
                                 Получите персональную программу похудения на основе веса, роста, возраста и привычек
                             </div>
                             <a href="#" class="card__link">
-                                подробнее
-                            </a>
+                            подробнее
+                        </a>
                         </div>
                         <div class="card">
                             <img class="card__icon" src="img/card_icon_flask.svg" alt="icon">
@@ -138,8 +138,8 @@
                                 Забор крови на различные исследования и анализы
                             </div>
                             <a href="#" class="card__link">
-                                подробнее
-                            </a>
+                            подробнее
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -268,8 +268,8 @@
                                     </div>
                                 </div>
                                 <a href="#" class="main__docs_button button">
-                                    Записаться на приём
-                                </a>
+                                Записаться на приём
+                            </a>
                             </div>
                         </div>
                         <div class="main__docs_info" data-hash="_2">
@@ -301,8 +301,8 @@
                                     </div>
                                 </div>
                                 <a href="#" class="main__docs_button button">
-                                    Записаться на приём
-                                </a>
+                                Записаться на приём
+                            </a>
                             </div>
                         </div>
                         <div class="main__docs_info" data-hash="_3">
@@ -334,8 +334,8 @@
                                     </div>
                                 </div>
                                 <a href="#" class="main__docs_button button">
-                                    Записаться на приём
-                                </a>
+                                Записаться на приём
+                            </a>
                             </div>
                         </div>
 
@@ -371,10 +371,59 @@
                             временной нетрудоспособности. Мы создали условия для комфортного обследования и эффективного лечения.
                         </div>
                         <a href="#" class="main__mission_button button">
-                            Подробнее о клинике
-                        </a>
+                        Подробнее о клинике
+                    </a>
                     </div>
 
+                </div>
+            </div>
+        </div>
+        <div class="main_contacts">
+            <img class="main_contacts_background" src="img/contacts_background.jpg" alt="map">
+            <div class="container">
+                <div class="main_contacts_content">
+                    <div class="main_contacts_title">
+                        Контакты
+                    </div>
+                    <div class="main_contacts_tel">
+                        <div class="main_contacts_tel_title contacts__title">
+                            Телефон:
+                        </div>
+                        <div class="main_contacts_tel_text">
+                            <div class="main__tel_wrapper">
+                                <a href="tel:+74012389003" class="main_contacts_tel_no main_tel1">
+                                    +7 (4012) 38-90-03
+                                </a>
+                                <a href="tel:+74012389110" class="main_contacts_tel_no main_tel3">
+                                    +7 (4012) 38-91-10
+                                </a>
+                            </div>
+                            <div class="main__tel_wrapper">
+                                <a href="tel:+79062389003" class="main_contacts_tel_no main_tel2">
+                                    +7-906-238-90-03
+                                </a>
+                                <a href="tel:+79062389110" class="main_contacts_tel_no main_tel4">
+                                    +7-906-238-91-10
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main_contacts_adr">
+                            <div class="main_contacts_adr_title contacts__title">
+                                Адрес
+                            </div>
+                            <div class="main_contacts_adr_text">
+                                г. Калининград, ул. Артиллерийская, 85/4
+                            </div>
+                        </div>
+                        <div class="main_contacts_mail">
+                            <div class="main_contacts_mail_title contacts__title">
+                                Email:
+                            </div>
+                            <a href="mailto:neboleika39@gmail.com" class="main_contacts_mail_text">
+                                neboleika39@gmail.com
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

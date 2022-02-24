@@ -106,7 +106,7 @@ li {
 }
 
 .button:hover {
-    box-shadow: 0 8px 32px 2px #92C02C;
+    box-shadow: 0 8px 32px 2px #D7FD83;
 }
 
 .button:active {
@@ -632,4 +632,77 @@ li {
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(../img/icon_mission_arrow.svg);
+}
+
+.main_contacts {
+    position: relative;
+}
+
+.main_contacts_content {
+    max-width: 470px;
+    padding: 60px;
+    position: absolute;
+    top: 14%;
+    background-color: #FFF;
+    box-shadow: 10px 10px 60px 0px #28425040;
+    border-radius: 10px;
+}
+
+.main_contacts_title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+.contacts__title {
+    position: relative;
+    margin-left: 43px;
+    color: #8B9FA5;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.contacts__title::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    left: -44px;
+    top: -7px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main_contacts_tel_text {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.main_contacts_tel_title::before {
+    background-image: url(../img/icon_main_contacts_tel.svg);
+}
+
+.main_contacts_adr_title::before {
+    background-image: url(../img/icon_main_contacts_adr.svg);
+}
+
+.main_contacts_mail_title::before {
+    background-image: url(../img/icon_main_contacts_mail.svg);
+}
+
+.main_contacts_tel_no {
+    display: inline-block;
+}
+
+.main__tel_wrapper {
+    max-width: 131px;
+}
+
+.main__tel_wrapper:last-child {
+    margin-left: 40px;
+}
+
+.main_contacts_adr {
+    margin-bottom: 35px;
 }
