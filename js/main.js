@@ -21,8 +21,11 @@ document.querySelectorAll('.header__link').forEach(element => element.addEventLi
 const myModal = new HystModal({
     linkAttributeName: "data-hystmodal",
 });
+// HEADER PANEL________________________________
 
-
+document.querySelector('.services_item').addEventListener('click', event => {
+    document.querySelector('.header__panel').classList.toggle('active')
+})
 
 
 
