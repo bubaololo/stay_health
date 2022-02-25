@@ -13,9 +13,9 @@
                         <em>Пн-Пт</em> 7:30-20:00<br>
                         <em>Сб</em> 9:00-14:00
                     </div>
-                    <div class="header__contacts_phone">
-                        +7 (4012) 000-000
-                    </div>
+                    <a href="tel:+74012000000" class="header__contacts_phone">
+                                +7 (4012) 000-000
+                            </a>
                 </div>
                 <a href="#" class="header__button button">
                     Записаться на приём

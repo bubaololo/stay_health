@@ -129,11 +129,24 @@ li {
     max-width: 224px;
 }
 
-.header__contacts div {
+.header__contacts div,
+.header__contacts a {
     position: relative;
 }
 
 .header__contacts div::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    height: 16px;
+    top: 3px;
+    left: -26px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__contacts a::before {
     position: absolute;
     content: "";
     width: 16px;
@@ -777,4 +790,142 @@ li {
 .main__registration_text em {
     font-weight: 500;
     font-style: normal;
+}
+
+.footer__top {
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    padding-top: 43px;
+    padding-bottom: 35px;
+    font-size: 14px;
+}
+
+.footer__bottom {
+    padding-bottom: 35px;
+    padding-top: 15px;
+}
+
+.footer__top_wrapper {
+    display: grid;
+    grid-template-areas: "_1 _2 _3 _4 _5 _6";
+    grid-column-gap: 45px;
+}
+
+.fc1 {
+    grid-area: _1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fc2 {
+    grid-area: _2;
+}
+
+.fc3 {
+    grid-area: _3;
+}
+
+.fc4 {
+    grid-area: _4;
+}
+
+.fc5 {
+    grid-area: _5;
+}
+
+.fc6 {
+    grid-area: _6;
+}
+
+.footer__logo {
+    width: 154px;
+    margin-bottom: 25px;
+}
+
+.fc1 a {
+    margin-bottom: 25px;
+}
+
+.footer__copyright {
+    margin-bottom: 25px;
+}
+
+.footer__policy,
+.footer__license {
+    border-bottom: 1px solid #92C02C;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.footer__link {
+    white-space: nowrap;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.footer__title {
+    white-space: nowrap;
+    margin-bottom: 28px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    position: relative;
+}
+
+.footer__title_line {
+    position: absolute;
+    height: 1px;
+    width: 32px;
+    background-color: #92C02C;
+    left: 0;
+    bottom: -5px;
+}
+
+.footer nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.fc5 .footer__link:first-child {
+    margin-top: 52px;
+}
+
+.footer__right_links {
+    margin-top: 52px;
+    margin-left: 25px;
+    max-width: 169px;
+    margin-right: -19px;
+}
+
+.footer__right_bold {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    max-width: 172px;
+}
+
+.footer__doc_call {
+    display: inline-block;
+    font-weight: 400;
+    color: #92C02C;
+    border-bottom: 1px solid #92C02C;
+    line-height: 39px;
+}
+
+.footer .logo__link {
+    font-size: 14px;
+    margin-top: 9px;
+    display: flex;
+}
+
+.footer .header__contacts {
+    width: 538px;
+    margin-right: 384px;
+}
+
+.diez_logo {
+    margin-left: 20px;
 }
