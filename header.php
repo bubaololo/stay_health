@@ -5,15 +5,15 @@
                 <a class="logo__link" href="/">
                     <img class="logo" src="/img/logo.svg" alt="logo">
                 </a>
-                <div class="header__contacts">
-                    <div class="header__contacts_adress">
+                <div class="contacts__wrapper">
+                    <div class="contacts__adress contacts__item">
                         г. Калининград,<br> ул. Артиллерийская, 85/4
                     </div>
-                    <div class="header__contacts_hours">
+                    <div class="contacts__hours contacts__item">
                         <em>Пн-Пт</em> 7:30-20:00<br>
                         <em>Сб</em> 9:00-14:00
                     </div>
-                    <a href="tel:+74012000000" class="header__contacts_phone">
+                    <a href="tel:+74012000000" class="contacts__phone contacts__item">
                                 +7 (4012) 000-000
                             </a>
                 </div>
@@ -25,7 +25,7 @@
                 <a href="#" class="header__menu_item" aria-label="0">
                     Главная
                 </a>
-                <a href="#" class="header__menu_item" aria-label="0">
+                <a href="about.php" class="header__menu_item" aria-label="0">
                     О клинике
                 </a>
                 <a href="#" class="header__menu_item services_item" aria-label="0">

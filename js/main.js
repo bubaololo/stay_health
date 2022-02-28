@@ -21,6 +21,7 @@ document.querySelectorAll('.header__link').forEach(element => element.addEventLi
 const myModal = new HystModal({
     linkAttributeName: "data-hystmodal",
 });
+
 // HEADER PANEL________________________________
 
 document.querySelector('.services_item').addEventListener('click', event => {
@@ -28,8 +29,7 @@ document.querySelector('.services_item').addEventListener('click', event => {
 })
 
 
-
-
+// MAIN PAGE DOCTORS SLIDER
 
 $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
@@ -49,6 +49,91 @@ $(document).ready(function() {
 
     });
 });
+
+
+// ABOUT PAGE SLIDER
+
+$(document).ready(function() {
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            // titleSrc: function(item) {
+            //     return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            // }
+        }
+    });
+});
+
+$(document).ready(function() {
+    $('.popup-gallery').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        speed: 500,
+        waitForAnimate: false,
+        centerPadding: '85px',
+        prevArrow: $('.prev_arrow'),
+        nextArrow: $('.next_arrow'),
+        // responsive: [{
+        //         breakpoint: 1900,
+        //         settings: {
+        //             slidesToShow: 6,
+
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 1500,
+        //         settings: {
+        //             slidesToShow: 5,
+
+
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 1300,
+        //         settings: {
+        //             slidesToShow: 4,
+
+
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 1000,
+        //         settings: {
+        //             slidesToShow: 2,
+
+
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 500,
+        //         settings: {
+        //             slidesToShow: 1,
+
+        //         }
+        //     },
+
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+        //  ]
+
+    });
+});
+
+
+
+
 
 
 // FAQ ACCORDEON________________________________________

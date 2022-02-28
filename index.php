@@ -444,8 +444,6 @@
                             <a href="#" class="main__docs_button button">
                             Записаться на приём
                         </a>
-
-
                         </div>
                     </div>
                 </div>
