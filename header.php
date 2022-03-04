@@ -48,7 +48,7 @@
                 </a>
                 </div>
                 <nav class="header__menu">
-                    <a href="#" class="header__menu_item" aria-label="0">
+                    <a href="/" class="header__menu_item" aria-label="0">
                     Главная
                 </a>
                     <a href="about.php" class="header__menu_item" aria-label="0">
@@ -88,9 +88,9 @@
             <div class="container">
                 <div class="header__panel_wrapper">
                     <div class="header__panel_spec">
-                        <div class="header__panel_spec_title panel__title">
+                        <a href="spec_reception.php" class="header__panel_spec_title panel__title">
                             Приём специалистов
-                        </div>
+                        </a>
                         <nav class="header__panel_spec_list panel__list">
                             <a href="#" class="panel__link" aria-label="0">
                             Педиатр

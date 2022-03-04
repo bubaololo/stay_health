@@ -460,7 +460,7 @@ li {
 }
 
 .main__services_bottom .cards {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .main__services-button {
@@ -481,6 +481,7 @@ li {
     padding: 40px;
     background-color: #FFF;
     box-shadow: 10px 10px 40px rgba(40, 66, 80, 0.15);
+    margin-bottom: 30px;
 }
 
 .card__icon {
@@ -1195,7 +1196,7 @@ li {
 .paginate__link:not(:last-child):after {
     position: absolute;
     content: "";
-    width: 4px;
+    width: 5px;
     height: 9px;
     right: -14px;
     top: 6px;
@@ -1212,9 +1213,14 @@ li {
     position: relative;
 }
 
-.root {
+.bubbles__blue .root {
     font-weight: 400;
     font-size: 12px;
+}
+
+.bubbles__blue .child {
+    font-weight: 300;
+    color: #878686;
 }
 
 .about__content_top_wrapper {
@@ -1658,9 +1664,19 @@ select {
 }
 
 .services__page_services {
-    margin-bottom: 148px;
+    margin-bottom: 118px;
 }
 
 .services__page_text_wrapper {
     max-width: 1154px;
+}
+
+.bubbles__wrapper {
+    position: relative;
+}
+
+.bubbles__reception_icon {
+    position: absolute;
+    top: -5px;
+    right: 0;
 }
