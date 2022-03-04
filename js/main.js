@@ -13,7 +13,24 @@ document.querySelectorAll('.header__link').forEach(element => element.addEventLi
 );
 
 
+// FORM SELECT HANDLER________________________________
+let services1 = document.getElementById('service_items1');
+let services2 = document.getElementById('service_items2');
 
+let serviceSelector = document.getElementById('service_type');
+
+serviceSelector.onchange = function() {
+
+    let selectName = serviceSelector.value;
+
+    let selectedItem = document.getElementById(selectName);
+    selectedItem.classList.remove('hide');
+    let hiddenItems = document.querySelectorAll(`.custom__services select:not(#${selectName})`);
+    hiddenItems.forEach((item) => {
+        item.classList.add('hide');
+    })
+
+}
 
 
 // CONTACT FORM MODAL WINDOW__________________________________

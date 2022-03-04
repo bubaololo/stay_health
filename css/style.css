@@ -333,11 +333,13 @@ li {
 }
 
 .button__transparent {
+    position: relative;
     display: inline-block;
     border-radius: 30px;
     height: 60px;
     line-height: 60px;
-    padding: 0 32px;
+    padding-left: 40px;
+    padding-right: 72px;
     background-color: #FFF;
     border: 2px solid #92C02C;
     color: #92C02C;
@@ -345,10 +347,26 @@ li {
     transition: all .3s;
 }
 
+.button__transparent::after {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 17px;
+    right: 33px;
+    top: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/icon_bag.svg);
+}
+
 .button__transparent:hover {
     background-color: #92C02C;
     transition: all .3s;
     color: #fff;
+}
+
+.button__transparent:hover::after {
+    background-image: url(../img/icon_bag_white.svg);
 }
 
 .button__transparent:active {
@@ -1174,13 +1192,13 @@ li {
     position: relative;
 }
 
-.paginate__link::after {
+.paginate__link:not(:last-child):after {
     position: absolute;
     content: "";
     width: 4px;
     height: 9px;
     right: -14px;
-    top: 7px;
+    top: 6px;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(../img/icon_arrow_paginate.svg);
@@ -1364,4 +1382,285 @@ li {
     background-position: center center;
     background-image: url(../img/icon_gallery_zoom.svg);
     z-index: 10;
+}
+
+
+/* _____________________________________FORM */
+
+.form {
+    max-width: 770px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-top: 36px;
+    border-radius: 24px;
+    padding: 60px 100px;
+}
+
+#main_form_close {
+    width: 23px;
+    height: 23px;
+    top: 42px;
+    right: 48px;
+    background-image: url(../img/form_close.svg);
+}
+
+.form__top {
+    margin-bottom: 33px;
+}
+
+.form__input_wrapper {
+    display: grid;
+    grid-template-areas: "name lastname" "date time" "service phone";
+    grid-gap: 30px;
+}
+
+.form__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 55px;
+    color: #393185;
+    margin-bottom: 35px;
+}
+
+.input_name {
+    grid-area: name;
+}
+
+.input_lastname {
+    grid-area: lastname;
+}
+
+.input_date {
+    grid-area: date;
+}
+
+.input_time {
+    grid-area: time;
+}
+
+.input_service {
+    grid-area: service;
+}
+
+.input_phone {
+    grid-area: phone;
+}
+
+.form__item {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.form_label {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form_input {
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    outline: none;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+}
+
+.custom__services select {
+    margin-top: 30px;
+}
+
+.input_comment {
+    margin-top: 30px;
+}
+
+.form_input::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+    color: #8E8E8E;
+}
+
+.form_input:focus {
+    border: 1px solid #4A4A4A;
+    transition: all .5s;
+}
+
+.form textarea {
+    min-height: 110px;
+    resize: none;
+    padding: 20px;
+}
+
+select:invalid {
+    font-size: 14px;
+    line-height: 20px;
+    color: #8E8E8E;
+}
+
+option {
+    font-family: inherit;
+}
+
+
+/* select:required:invalid {
+    color: gray;
+  } */
+
+
+/* .form_input:disabled {
+    color: #8E8E8E;
+} */
+
+select {
+    position: relative;
+    display: inline-block;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: top 27px right 27px;
+    background-image: url(../img/icon_form_arrow.svg)
+}
+
+.input_time {
+    background-image: url(../img/icon_form_time.svg);
+    background-position: top 21px right 20px;
+}
+
+::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url(../img/icon_form_date.svg) no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.input_date[type="text"] {
+    background-repeat: no-repeat;
+    background-image: url(../img/icon_form_date.svg);
+    background-position: top 21px right 20px;
+}
+
+
+/* select::after {
+    position: absolute;
+    display: inline-block;
+    content: "V";
+    width: 10px;
+    height: 6px;
+    right: 27px;
+    top: 27px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/icon_arrow.svg);
+    z-index: 10;
+} */
+
+.hide {
+    display: none;
+}
+
+.submit_button {
+    border: none;
+    cursor: pointer;
+}
+
+.form_submit {
+    margin-left: 31px;
+}
+
+.blue_button {
+    background: unset;
+    background-color: #E7F5FB;
+    color: #B0CDD7;
+    padding: 0 80px;
+    transition: all .3s;
+    margin: 0;
+}
+
+.blue_button:hover {
+    background: unset;
+    background-color: #D4F1FD;
+}
+
+.form__bottom {
+    display: flex;
+}
+
+.checkbox__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 17px;
+}
+
+.check {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    margin-right: 18px;
+}
+
+.check__input {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-image: url(../img/check_off.svg);
+}
+
+.check__input:checked+.check__box {
+    background-image: url(../img/check_on.svg);
+}
+
+.checkbox__disclaimer {
+    font-size: 12px;
+    line-height: 16px;
+    color: #2B2A29;
+}
+
+.checkbox__disclaimer a {
+    text-decoration: underline;
+}
+
+.bubbles__green .paginate__link {
+    color: #fff;
+}
+
+.bubbles__green .bubbles__title {
+    color: #fff;
+}
+
+.bubbles__green .paginate__link:not(:last-child):after {
+    background-image: url(../img/icon_arrow_paginate_white.svg);
+}
+
+.bubbles__green.bubbles {
+    background: linear-gradient(270deg, #23AB59 -121.82%, #92C02C 70.45%);
+}
+
+.green_bubble {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.services__page_text {
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.services__page_services {
+    margin-bottom: 148px;
+}
+
+.services__page_text_wrapper {
+    max-width: 1154px;
 }

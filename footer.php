@@ -149,7 +149,7 @@
                                 +7 (4012) 000-000
                             </a>
                         </div>
-                        <a href="#" class="header__button button">
+                        <a href="#" class="header__button button" data-hystmodal="#myModal">
                             Записаться на приём
                         </a>
                     </div>
@@ -157,9 +157,104 @@
             </div>
         </div>
 </footer>
+<section class="register__form">
+    <div class="hystmodal" id="myModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close" id="main_form_close">Close</button>
+                <section class="form">
+
+                    <div class="form__wrapper">
+                        <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                            <div class="form__top">
+                                <h2 class="form__title">
+                                    Записаться на приём
+                                </h2>
+                                <div class="form__input_wrapper">
+
+                                    <input id="name" type="text" name="name" class="form_input input_name" placeholder="Имя">
 
 
-<div class="hystmodal" id="myModal" aria-hidden="true">
+                                    <input id="last_name" type="text" name="last_name" class="form_input input_lastname" placeholder="Фамилия">
+
+
+                                    <!-- <input type="date" id="date" name="date" class="form_input input_date"> -->
+                                    <input placeholder="Планируемая дата" class="form_input input_date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+
+
+                                    <select required name="time" id="time" class="form_input input_time">
+                                        <option value="" disabled selected>Время</option>
+                                        <option value="8">8:00</option>
+                                        <option value="12">12:00</option>
+                                        <option value="14">14:00</option>
+                                        <option value="16">16:00</option>
+                                    </select>
+
+                                    <select required name="service_type" id="service_type" class="form_input input_service">
+                                            <option value="" disabled selected>Выберите тип услуги</option>
+                                            <option value="service_items1">Массаж</option>
+                                            <option value="service_items2">Косметолог</option>
+                                            <option value="service_items3">Оториноларинголог</option>
+                                        </select>
+                                    <input id="phone" type="tel" name="phone" class="form_input input_phone" placeholder="+7___-___-__-__">
+
+                                </div>
+                                <div class="custom__services">
+                                    <select name="service_items1" id="service_items1" class="form_input hide">
+                                            <option value="" class="select_placeholder">Взрослый массаж</option>
+                                            <option value="">Детский массаж</option>
+                                            <option value="">Женский массаж</option>
+                                        </select>
+                                    <select name="service_items2" id="service_items2" class="form_input hide">
+                                            <option value="" class="select_placeholder">Косметолог</option>
+                                            <option value="">Прыщи</option>
+                                            <option value="">Угри</option>
+                                        </select>
+                                    <select name="service_items2" id="service_items3" class="form_input hide">
+                                            <option value="massage" class="select_placeholder">Оториноларинголог</option>
+                                            <option value="">ухо</option>
+                                            <option value="">горло</option>
+                                            <option value="">нос</option>
+                                        </select>
+                                </div>
+                                <textarea id="comment" name="comment" class="form_input input_comment" placeholder="Комментарий к записи"></textarea>
+
+                            </div>
+
+                            <div class="form__bottom">
+
+                                <div class="form__send_button">
+                                    <!-- <a href="#" class="header__button button" data-hystmodal="#myModal">
+                                        Записаться на приём
+                                    </a> -->
+                                    <input type="submit" class="submit_button button blue_button">
+                                </div>
+                                <div class="checkbox__wrapper">
+                                    <label class="check option">
+                                        <input type="checkbox" id="check" name="check" required class="check__input">
+                                        <span class="check__box"></span>
+                                    </label>
+
+                                    <div class="checkbox__disclaimer">
+                                        Я согласен с правилами обработки персональных данных и ознакомлен с <a href="#">Политикой конфидециальности</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </form>
+                    </div>
+
+            </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- //DOCTOR_CALL_______________________________________________________ -->
+<!-- <div class="hystmodal" id="myModal" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close" id="main_form_close">Close</button>
@@ -169,67 +264,67 @@
                         <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
                             <div class="form__top">
                                 <h2 class="form__title title">
-                                    Envía tu solicitud
+                                    Вызвать врача на дом
                                 </h2>
                                 <div class="form__input_wrapper">
                                     <div class="form__item">
-                                        <label for="name" class="form_label">¿Como te llamas?</label>
-                                        <input id="name" type="text" name="name" class="form_input">
+                                        <input id="name" type="text" name="name" class="form_input" placeholder="Имя">
+                                    </div>
+                                    <div class="form__item">
+                                        <input id="last_name" type="text" name="last_name" class="form_input" placeholder="Фамилия">
+                                    </div>
+                                    <div class="form__item">
+                                        <select name="spec" id="form_spec">
+                                            <option value="" disabled selected>Выберите специалиста</option>
+                                            <option value="dantist">Стоматолог</option>
+                                            <option value="diet">Диетолог</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__item">
+                                        <input id="phone" type="tel" name="phone" class="form_input _req" placeholder="+7___-___-__-__">
+                                    </div>
+                                    <div class="form__item">
+                                        <input id="adress" type="text" name="adress" class="form_input" placeholder="Ваш адрес">
                                     </div>
 
-                                    <div class="form__item">
-                                        <label for="phone" class="form_label ">Tu número de teléfono</label>
-                                        <input id="phone" type="tel" name="phone" class="form_input _req">
-                                    </div>
 
                                     <div class="form__item">
-                                        <label for="email" class="form_label">Tu correo electrónico*</label>
-                                        <input id="email" type="email" name="email" required class="form_input _req">
-                                    </div>
 
-                                    <div class="form__item">
-                                        <label for="site" class="form_label">El sitio de la empresa</label>
-                                        <input id="site" type="text" name="site" class="form_input">
-                                    </div>
-
-                                    <div class="form__item">
-                                        <label for="message" class="form_label">Descripción</label>
-                                        <textarea id="message" name="message" class="form_input"></textarea>
+                                        <textarea id="comment" name="comment" class="form_input" placeholder="Комментарий к записи"></textarea>
                                     </div>
                                 </div>
 
 
                             </div>
-                    </div>
-                    <div class="form__bottom">
-                        <div class="form__send">
-                            <div class="form__send_button">
-                                <div class="form_submit">
-                                    Enviar mensaje
-                                    <svg class="img-arrow-form">
-                                        <path fill="##4A4A4A"
-                                            d="M29.7204 7.07638C30.0456 6.75118 30.0456 6.22392 29.7204 5.89871L24.4208 0.599184C24.0956 0.273979 23.5684 0.273979 23.2432 0.599184C22.918 0.924389 22.918 1.45165 23.2432 1.77686L27.9539 6.48755L23.2432 11.1982C22.918 11.5234 22.918 12.0507 23.2432 12.3759C23.5684 12.7011 24.0956 12.7011 24.4208 12.3759L29.7204 7.07638ZM0.818359 7.32029L29.1315 7.32029L29.1315 5.65481L0.818359 5.65481L0.818359 7.32029Z">
-                                        </path>
-                                    </svg>
+
+                            <div class="form__bottom">
+                                <div class="form__send">
+                                    <div class="form__send_button">
+
+                                        <input type="submit" class="submit_button button">
+                                    </div>
+                                    <div class="checkbox__wrapper">
+                                        <input type="checkbox" required>
+                                        <div class="checkbox__disclaimer">
+                                            Я согласен с правилами обработки персональных данных и ознакомлен с Политикой конфидециальности
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <input type="submit" class="submit_button">
+                                <div class="form__send_disclaimer">
+                                    Al hacer clic en el botón, acepta el procesamiento de datos personales.
+                                </div>
                             </div>
-                            <div class="form__send_disclaimer">
-                                Al hacer clic en el botón, acepta el procesamiento de datos personales.
-                            </div>
-                        </div>
-                        <div class="form__logo">
-                            <img id="form_logo" src="/img/logo.svg" alt="logo">
-                        </div>
+                        </form>
                     </div>
-                    </form>
                 </div>
         </div>
         </section>
     </div>
-</div>
+</div> -->
 
-<div class="hystmodal" id="confirm" aria-hidden="true">
+
+<!-- <div class="hystmodal" id="confirm" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">Close</button>
@@ -241,4 +336,12 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/hystmodal.min.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>

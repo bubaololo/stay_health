@@ -106,9 +106,10 @@
     outline: none
 }
 
-.hystmodal__close:hover {
+
+/* .hystmodal__close:hover {
     filter: drop-shadow(0 0 0.75rem #000);
-}
+} */
 
 .hystmodal__close:focus {
     filter: drop-shadow(0 0 0.75rem #000);
