@@ -119,9 +119,9 @@
                         </nav>
                     </div>
                     <div class="header__panel_massage">
-                        <div class="header__panel_massage_title panel__title">
+                        <a href="massage.php" class="header__panel_massage_title panel__title">
                             Массаж
-                        </div>
+                        </a>
                         <div class="header__panel_massage_list_wrapper">
                             <div class="header__panel_massage_list-left">
                                 <a href="#" class="panel__link" aria-label="0">
