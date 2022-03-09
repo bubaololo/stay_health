@@ -66,7 +66,7 @@
                     <a href="reviews.php" class="header__menu_item" aria-label="0">
                     Отзывы
                 </a>
-                    <a href="#" class="header__menu_item" aria-label="0">
+                    <a href="contacts.php" class="header__menu_item" aria-label="0">
                     Контакты
                 </a>
                 </nav>

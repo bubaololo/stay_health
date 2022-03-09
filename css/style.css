@@ -2318,3 +2318,116 @@ border-radius: 100%;
 .reviews .paginate {
     margin-bottom: 100px;
 }
+.contacts__top {
+    margin-top: 74px;
+    padding-bottom: 100px;
+}
+.contacts__top_wrapper {
+    display: flex;
+    
+}
+.contacts__photo_wrapper {
+    margin-right: 130px;
+}
+.contacts__photo {
+    position: relative;
+    max-width: 470px;
+    border-radius: 10px;
+}
+.contacts__photo::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/icon_gallery_zoom.svg);
+    z-index: 10;
+  }
+  .contacts__photo_text {
+    max-width: 450px;
+    margin-bottom: 86px;
+  }
+  .contacts__data {
+    display: grid;
+    grid-template-areas: "time ." "tel1 tel2" "addr email";
+    grid-column-gap: 45px;
+}
+
+.contacts__data_tel1 {
+    display: block;
+    grid-area: tel1;
+    
+}
+.contacts__data_tel2 {
+    display: block;
+    grid-area: tel2;
+}
+.contacts__data_addr {
+    grid-area: addr;
+}
+.contacts__data_email {
+    grid-area: email;
+}
+.contacts__data_time .contacts__data_text {
+    white-space: pre;
+    text-align: right;
+}
+.contacts__data_time .contacts__data_title {
+margin-left: 0;
+}
+.contacts__data_time {
+    display: flex;
+flex-direction: column;
+
+align-items: flex-start;
+}
+.contacts__data_text em {
+    font-style: normal;
+    font-weight: 400;
+}
+.contacts__data_title {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #8B9FA5;
+    margin-left: 43px;
+    margin-bottom: 23px; 
+}
+.contacts__data_text {
+    display: block;
+}
+
+.contacts__data_title::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: -4px;
+    left: -48px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .contacts__data_tel1 .contacts__data_title::before {
+    background-image: url(../img/icon_contacts_phone.svg);
+  }
+  .contacts__data_tel2 .contacts__data_title::before {
+    background-image: url(../img/icon_contacts_phone.svg);
+  }
+  .contacts__data_addr .contacts__data_title::before {
+    background-image: url(../img/icon_contacts_addr.svg);
+  }
+  .contacts__data_email .contacts__data_title::before {
+    background-image: url(../img/icon_contacts_email.svg);
+  }
+  .contacts__data_text a:first-child {
+      margin-bottom: 9px;
+  }
+  .contacts_map {
+      margin-bottom: 141px;
+  }
