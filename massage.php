@@ -7,7 +7,7 @@
             <div class="small__bubble green_bubble"></div>
             <div class="container">
                 <div class="bubbles__wrapper">
-                    <img src="img/icon_bubbles_massage.svg" alt="icon" class="bubbles__massage_icon">
+                    <img src="img/icon_bubbles_massage.svg" alt="icon" class="bubbles__icon">
                     <div class="bubbles__content">
                         <div class="bubbles__paginate">
                             <a href="/" class="paginate__link">
@@ -27,9 +27,9 @@
                 </div>
             </div>
         </div>
-        <div class="massage__text">
+        <div class="default__text">
             <div class="container">
-                <div class="massage__text_wrapper">
+                <div class="default__text_wrapper">
                     Порой, чтобы снять болевой синдром, довольно просто сходить и сделать профессиональный медицинский массаж. От обычного медицинский массаж отличается тем, что это совокупность приемов именно лечебного воздействия на ткани и органы посредством профессиональных
                     рук массажиста или аппарата. Соответственно сделать такой массаж вам может только человек с медицинским образованием - врач или средний медперсонал.
                 </div>

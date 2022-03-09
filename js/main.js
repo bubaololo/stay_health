@@ -155,15 +155,28 @@ $(document).ready(function() {
 
 // FAQ ACCORDEON________________________________________
 
-const faqTitles = document.querySelectorAll(".faq__item_wrapper");
+const accTitles = document.querySelectorAll(".accordeon__section_title");
 
-faqTitles.forEach(item => item.addEventListener('click', toggleAccordion));
+accTitles.forEach(item => item.addEventListener('click', toggleMain));
 
-function toggleAccordion() {
-    const faqText = this.querySelector('.faq__item_text');
+function toggleMain() {
+    const accContent = this.nextElementSibling;
+this.classList.toggle('closed');
+    
 
+    accContent.classList.toggle('closed');
 
-    faqText.classList.toggle('closed');
+}
+const accItemtitles = document.querySelectorAll(".accordeon__item_title");
+
+accItemtitles.forEach(item => item.addEventListener('click', toggleNest));
+
+function toggleNest() {
+    const accListcontent = this.nextElementSibling;
+    this.classList.toggle('closed');
+    
+
+    accListcontent.classList.toggle('closed');
 
 }
 

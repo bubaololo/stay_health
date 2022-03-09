@@ -7,7 +7,7 @@
             <div class="small__bubble green_bubble"></div>
             <div class="container">
                 <div class="bubbles__wrapper">
-                    <img src="img/icon_spec_recipe.svg" alt="icon" class="bubbles__reception_icon">
+                    <img src="img/icon_spec_recipe.svg" alt="icon" class="bubbles__icon">
                     <div class="bubbles__content">
                         <div class="bubbles__paginate">
                             <a href="/" class="paginate__link">
@@ -27,9 +27,9 @@
                 </div>
             </div>
         </div>
-        <div class="services__page_text">
+        <div class="default__text">
             <div class="container">
-                <div class="services__page_text_wrapper">
+                <div class="default__text_wrapper">
                     Клиника специализируется на оказании амбулаторно-поликлинической и лечебно-диагностической помощи. В клинике ведут прием следующие специалисты: педиатр, терапевт, невролог, кардиолог, офтальмолог, врач ультразвуковой диагностики. В нашей клинике можно
                     сдать любые анализы, воспользоваться услугами процедурного кабинета, поставить прививки детям и взрослым, сделать ЭКГ, холтер ЭКГ и СМАД. Также у нас возможно оформление и выдачи медицинской документации, в том числе и листков временной
                     нетрудоспособности. Мы создали условия для комфортного обследования и эффективного лечения.

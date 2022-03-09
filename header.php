@@ -60,7 +60,7 @@
                     <a href="#" class="header__menu_item" aria-label="0">
                     Новости
                 </a>
-                    <a href="#" class="header__menu_item" aria-label="0">
+                    <a href="specs.php" class="header__menu_item" aria-label="0">
                     Специалисты
                 </a>
                     <a href="#" class="header__menu_item" aria-label="0">
@@ -166,15 +166,15 @@
                         </div>
                     </div>
                     <div class="header__panel_right">
-                        <a href="#" class="header__panel_right_weight panel__title">
+                        <a href="weight.php" class="header__panel_right_weight panel__title">
                         Программы с лишним весом
                     </a>
-                        <a href="#" class="header__panel_right_analys panel__title">
+                        <a href="tests.php" class="header__panel_right_analys panel__title">
                         Процедурный кабинет с забором анализов
                     </a>
                     </div>
                     <div class="panel__buttons">
-                        <a href="#" class="button__blue">
+                        <a href="services_prices.php" class="button__blue">
                         Услуги и цены
                     </a>
                         <a href="#" class="button__transparent">

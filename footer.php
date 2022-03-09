@@ -227,7 +227,8 @@
                                     <!-- <a href="#" class="header__button button" data-hystmodal="#myModal">
                                         Записаться на приём
                                     </a> -->
-                                    <input type="submit" class="submit_button button blue_button">
+
+                                    <button class="submit_button button blue_button">Отправить</button>
                                 </div>
                                 <div class="checkbox__wrapper">
                                     <label class="check option">
