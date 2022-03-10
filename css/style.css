@@ -1233,6 +1233,7 @@ li {
 }
 
 .about__content_license {
+    display: inline-block;
     line-height: 105px;
     padding: 0 95px;
     box-shadow: 5px 5px 20px 0px #28425026;
@@ -2430,4 +2431,30 @@ align-items: flex-start;
   }
   .contacts_map {
       margin-bottom: 141px;
+  }
+  .license__title {
+      font-weight: 600;
+      font-size: 36px;
+      margin-bottom: 35px;
+  }
+  .license__text {
+      margin-bottom: 60px;
+  }
+  .licence__pics {
+      margin-bottom: 90px;
+  }
+  .licence__pics_wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .licence__pics_wrapper img {
+max-width: 370px;
+
+
+  }
+  .licence__pics_wrapper a {
+
+margin-bottom: 23px;
+
   }

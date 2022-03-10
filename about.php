@@ -31,9 +31,9 @@
             <div class="container">
                 <div class="about__content_top_wrapper">
                     <div class="about__content_top_contacts">
-                        <div class="about__content_license">
+                        <a href="license.php" class="about__content_license">
                             Лицензии
-                        </div>
+                        </a>
                         <div class="about__contacts_item_wrapper">
 
                             <a href="tel:+74012000000" class="contacts__phone contacts__item">
