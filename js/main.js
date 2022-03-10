@@ -105,38 +105,6 @@ $(document).ready(function() {
         //         breakpoint: 1900,
         //         settings: {
         //             slidesToShow: 6,
-
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 1500,
-        //         settings: {
-        //             slidesToShow: 5,
-
-
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 1300,
-        //         settings: {
-        //             slidesToShow: 4,
-
-
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 1000,
-        //         settings: {
-        //             slidesToShow: 2,
-
-
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 500,
-        //         settings: {
-        //             slidesToShow: 1,
-
         //         }
         //     },
 
@@ -209,7 +177,34 @@ function toggleNest() {
 
 }
 
+// NEWS PAGE SLIDER________________________________________
 
+
+$(document).ready(function() {
+    $('.news__page_slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        speed: 500,
+        waitForAnimate: false,
+        centerPadding: '137px',
+        prevArrow: $('.prev_arrow'),
+        nextArrow: $('.next_arrow'),
+        // responsive: [{
+        //         breakpoint: 1900,
+        //         settings: {
+        //             slidesToShow: 6,
+        //         }
+        //     },
+
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+        //  ]
+
+    });
+});
 
 // __________________________________________________________________________
 

@@ -57,7 +57,7 @@
                     <a href="#" class="header__menu_item services_item" aria-label="0">
                     Услуги
                 </a>
-                    <a href="#" class="header__menu_item" aria-label="0">
+                    <a href="news.php" class="header__menu_item" aria-label="0">
                     Новости
                 </a>
                     <a href="specs.php" class="header__menu_item" aria-label="0">
