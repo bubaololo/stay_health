@@ -177,7 +177,7 @@
                         <a href="services_prices.php" class="button__blue">
                         Услуги и цены
                     </a>
-                        <a href="#" class="button__transparent">
+                        <a href="call.php" class="button__transparent">
                         Вызвать врача на дом
                     </a>
                     </div>

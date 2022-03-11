@@ -2429,6 +2429,34 @@ select {
 .license__text {
   margin-bottom: 60px;
 }
+.licence__pics_wrapper a {
+    position: relative;
+    
+}
+
+.licence__pics_wrapper a::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/icon_gallery_zoom.svg);
+    z-index: 10;
+    opacity: 0;
+    transition: all .3s;
+  }
+  .licence__pics_wrapper a:hover::after {
+opacity: 1;
+  }
+
+
+
+
+
 .licence__pics {
   margin-bottom: 90px;
 }
@@ -2640,3 +2668,71 @@ select {
 .news__page_arrow:active {
   transform: scale(0.9);
 }
+.call__text {
+    margin-top: 80px;
+}
+.call__text_title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 36px;
+}
+.call__img {
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+.call__text_content {
+    margin-bottom: 38px;
+}
+.call__list_title, .call__list_price_title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+.call__list {
+    margin-bottom: 100px;
+}
+.call__list_item {
+    position: relative;
+    margin-left: -3px;
+}
+.call__list_item:not(:last-child) {
+    margin-bottom: 14px;
+}
+.call__list_item::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 16px;
+    left: -35px;
+    top: 3px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/icon_call_check.svg);
+}
+.call__list_price {
+    margin-bottom: 160px;
+}
+.call .main__docs_button::after {
+    right: 34px;
+    top: 21px;
+    width: 24px;
+    height: 18px;
+    background-image: url(../img/icon_call_button.svg);
+  }
+  .call__alert {
+      margin-top: 117px;
+      margin-bottom: 120px;
+  }
+  .call__alert_wrapper {
+      display: flex;
+  }
+  .call__alert_icon {
+      margin-right: 55px;
+  }
+  .call__alert_text {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+  }

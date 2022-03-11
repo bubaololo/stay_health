@@ -54,7 +54,7 @@
 <div class="licence__pics_wrapper">
     <a href="/img/license_full.jpg" title=""><img src="/img/license_min.jpg"></a>
     <a href="/img/license_full.jpg" title=""><img src="/img/license_min.jpg"></a>
-    <a href="/img/license_full.jpg" title=""><img src="/img/license_min.jpg"></a>
+    <a href="/img/license_full.jpg" title="" ><img src="/img/license_min.jpg"></a>
     <a href="/img/license_full.jpg" title=""><img src="/img/license_min.jpg"></a>
 
 </div>
