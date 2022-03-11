@@ -42,7 +42,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -61,7 +61,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -80,7 +80,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -99,7 +99,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -118,7 +118,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -137,7 +137,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -156,7 +156,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -175,7 +175,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -194,7 +194,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -213,7 +213,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -232,7 +232,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
@@ -251,7 +251,7 @@
                             </span>
 
                                 <div class="massage__item_link">
-                                    <a href="#" class="card__link">
+                                    <a href="spec_card.php" class="card__link">
                                 подробнее
                             </a>
                                 </div>
