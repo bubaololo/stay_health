@@ -1763,7 +1763,7 @@ select {
   margin-top: 36px;
 }
 
-.massage__item_link .card__link {
+.spec__card .card__link {
   position: relative;
   left: unset;
   display: inline-block;
@@ -2086,7 +2086,7 @@ select {
   font-weight: 400;
 }
 
-.specs .massage__item_link {
+.spec__card .massage__item_link {
   margin-top: 71px;
 }
 .accordeon {
@@ -2786,4 +2786,95 @@ opacity: 1;
 .spec__card .main__docs_info_line {
     max-width: unset;
     /* width: 100%; */
+}
+.specialty__wrapper {
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 140px;
+}
+.specialty__links {
+    width: 170px;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+.specialty__content {
+    flex-shrink: 1;
+    overflow: auto;
+}
+.specialty_link {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 59px;
+    position: relative;
+}
+.specialty_link:first-child {
+    margin-top: -16px;
+}
+.specialty_link::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    left: -39px;
+    top: 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+.specialty_link:not(:last-child) {
+    border-bottom: 1px solid #E5EDF0;
+}
+.ped_link::after {
+    background-image: url(../img/icon_ped.svg);
+}
+.ter_link::after {
+    background-image: url(../img/icon_ter.svg);
+}
+.neuro_link::after {
+    background-image: url(../img/icon_neuro.svg);
+}
+.endo_link::after {
+    background-image: url(../img/icon_endo.svg);
+}
+.logoped__link::after {
+    background-image: url(../img/icon_logo.svg);
+}
+.specialty__top_title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 33px;
+    color: #393185;
+
+}
+.pre_text {
+    white-space: pre-wrap;
+}
+.specialty__img {
+    border-radius: 10px;
+    
+}
+.specialty__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 35px;
+    margin-top: 60px;
+}
+.specialty__cards {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.specialty__list{
+    margin-bottom: 24px;
+}
+.pediatrist .ped_link {
+  color: #92C02C;
+}
+.therapist .ter_link {
+  color: #92C02C;
+}
+.neuro .neuro_link {
+  color: #92C02C;
 }

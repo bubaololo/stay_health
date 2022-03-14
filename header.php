@@ -92,13 +92,13 @@
                             Приём специалистов
                         </a>
                         <nav class="header__panel_spec_list panel__list">
-                            <a href="#" class="panel__link" aria-label="0">
+                            <a href="pediatr.php" class="panel__link" aria-label="0">
                             Педиатр
                         </a>
-                            <a href="#" class="panel__link" aria-label="0">
+                            <a href="therapist.php" class="panel__link" aria-label="0">
                             Терапевт
                         </a>
-                            <a href="#" class="panel__link" aria-label="0">
+                            <a href="neuro.php" class="panel__link" aria-label="0">
                             Невролог
                         </a>
                             <a href="#" class="panel__link" aria-label="0">
