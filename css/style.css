@@ -2706,7 +2706,7 @@ opacity: 1;
     width: 20px;
     height: 16px;
     left: -35px;
-    top: 3px;
+    top: 5px;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(../img/icon_call_check.svg);
@@ -2837,7 +2837,7 @@ opacity: 1;
 .endo_link::after {
     background-image: url(../img/icon_endo.svg);
 }
-.logoped__link::after {
+.logoped_link::after {
     background-image: url(../img/icon_logo.svg);
 }
 .specialty__top_title {
@@ -2877,4 +2877,19 @@ opacity: 1;
 }
 .neuro .neuro_link {
   color: #92C02C;
+}
+.endo .endo_link {
+  color: #92C02C;
+}
+.logoped .logoped_link {
+  color: #92C02C;
+}
+.endo .specialty__text {
+  margin-bottom: 30px;
+}
+.logoped .bubbles__icon {
+  top: 31px;
+}
+.logoped .bubbles__icon {
+  top: 7px;
 }

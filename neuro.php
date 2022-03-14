@@ -33,8 +33,8 @@
                 <a href="pediatr.php" class="specialty_link ped_link">Педиатр</a>
                 <a href="therapist.php" class="specialty_link ter_link">Терапевт</a>
                 <a href="#" class="specialty_link neuro_link">Невролог</a>
-                <a href="" class="specialty_link endo_link">Эндокринолог</a>
-                <a href="" class="specialty_link logoped__link">Логопед</a>
+                <a href="endo.php" class="specialty_link endo_link">Эндокринолог</a>
+                <a href="logoped.php" class="specialty_link logoped_link">Логопед</a>
             </aside>
             <div class="specialty__content ">
                 <div class="specialty__top_title">

@@ -104,13 +104,13 @@
                             <a href="#" class="panel__link" aria-label="0">
                             Невролог детский
                         </a>
-                            <a href="#" class="panel__link" aria-label="0">
+                            <a href="endo.php" class="panel__link" aria-label="0">
                             Эндокринолог
                         </a>
                             <a href="#" class="panel__link" aria-label="0">
                             Эндокринолог детский
                         </a>
-                            <a href="#" class="panel__link" aria-label="0">
+                            <a href="logoped.php" class="panel__link" aria-label="0">
                             Логопед
                         </a>
                             <a href="services.php" class="panel__link_services" aria-label="0">
