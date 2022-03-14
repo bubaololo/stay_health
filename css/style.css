@@ -1481,6 +1481,12 @@ li {
   display: block;
   width: 100%;
   font-size: 14px;
+  transition: all .1s;
+}
+
+.form_input.error {
+  border: 1px solid #EB5757;
+  background-color: #FFF4F4;
 }
 
 .custom__services select {

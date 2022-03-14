@@ -232,3 +232,92 @@ $(document).ready(function() {
 //         next: '.glider__bottom-next'
 //     }
 // });
+
+// PHP_MAILER______________________
+
+// function send(event, php) {
+//     // console.log("Отправка запроса");
+//     event.preventDefault ? event.preventDefault() : event.returnValue = false;
+//     var req = new XMLHttpRequest();
+//     req.open('POST', php, true);
+//     req.onload = function() {
+//         if (req.status >= 200 && req.status < 400) {
+//             json = JSON.parse(this.response); // Ебанный internet explorer 11
+            
+
+//             // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+//             if (json.result == "success") {
+//                 // Если сообщение отправлено
+//                 document.getElementById("form").reset();
+//                 document.getElementById("main_form_close").click()
+//                 myModal.open('#confirm');
+//             } else {
+//                 // Если произошла ошибка
+//                 alert("Ошибка. Сообщение не отправлено");
+//             }
+//             // Если не удалось связаться с php файлом
+//         } else { alert("Ошибка сервера. Номер: " + req.status); }
+//     };
+
+//     // Если не удалось отправить запрос. Стоит блок на хостинге
+//     req.onerror = function() { alert("Ошибка отправки запроса"); };
+//     req.send(new FormData(event.target));
+// };
+
+
+
+  let registerForm = document.getElementById('form');
+    let registerButton = document.getElementById('register_submit');
+    let nameInput = document.getElementById('name');
+    let dateInput = document.getElementById('date');
+    let timeInput = document.getElementById('time');
+    let telInput = document.getElementById('phone');
+    let serviceInput = document.getElementById('service_type');
+
+    let requiredInputs = [nameInput, dateInput, timeInput, telInput, serviceInput];
+
+    // console.log(requiredInputs);
+
+
+
+ 
+
+    registerForm.addEventListener('submit', event => {
+    
+        requiredInputs.forEach((input) => {
+            // console.log(input.value)
+            // event.preventDefault();
+            // input.classList.add('error');
+            if (input.value=="") {
+                event.preventDefault();
+                input.classList.add('error');
+                setTimeout(removeRed,2000);
+                function removeRed(){
+                    
+                    input.classList.remove('error');
+                }
+            }
+
+        });
+  
+        
+    
+      });
+
+
+
+//   registerForm.addEventListener('submit', event => {
+    
+    
+//     if (nameInput.value=="") {
+//         event.preventDefault();
+//         nameInput.classList.add('error');
+//         setTimeout(test,1300);
+//     } else if (dateInput.value=="") {
+//         event.preventDefault();
+//         dateInput.classList.add('error');
+        
+//     }
+    
+
+//   });

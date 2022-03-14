@@ -182,22 +182,20 @@
                                     <input placeholder="Планируемая дата" class="form_input input_date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
 
 
-                                    <select required name="time" id="time" class="form_input input_time">
+                                    <select name="time" id="time" class="form_input input_time">
                                         <option value="" disabled selected>Время</option>
                                         <option value="8">8:00</option>
                                         <option value="12">12:00</option>
                                         <option value="14">14:00</option>
                                         <option value="16">16:00</option>
                                     </select>
-
-                                    <select required name="service_type" id="service_type" class="form_input input_service">
+                                    <select name="service_type" id="service_type" class="form_input input_service">
                                             <option value="" disabled selected>Выберите тип услуги</option>
                                             <option value="service_items1">Массаж</option>
                                             <option value="service_items2">Косметолог</option>
                                             <option value="service_items3">Оториноларинголог</option>
                                         </select>
                                     <input id="phone" type="tel" name="phone" class="form_input input_phone" placeholder="+7___-___-__-__">
-
                                 </div>
                                 <div class="custom__services">
                                     <select name="service_items1" id="service_items1" class="form_input hide">
@@ -218,17 +216,14 @@
                                         </select>
                                 </div>
                                 <textarea id="comment" name="comment" class="form_input input_comment" placeholder="Комментарий к записи"></textarea>
-
                             </div>
-
                             <div class="form__bottom">
 
                                 <div class="form__send_button">
                                     <!-- <a href="#" class="header__button button" data-hystmodal="#myModal">
                                         Записаться на приём
                                     </a> -->
-
-                                    <button class="submit_button button blue_button">Отправить</button>
+                                    <button id="register_submit" class="submit_button button blue_button">Отправить</button>
                                 </div>
                                 <div class="checkbox__wrapper">
                                     <label class="check option">
