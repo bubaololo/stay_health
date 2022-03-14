@@ -2896,3 +2896,25 @@ opacity: 1;
 .visceral .massage_type12 {
   color: #92C02C;
 }
+._404 {
+  height: 891px;
+  background-color: #F4F9FB;
+}
+._404_img {
+  margin-bottom: 50px;
+}
+._404_wrapper {
+  margin: 0 auto;
+  margin-top: 126px;
+  display: inline-block;
+  text-align: center;
+}
+._404__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+._404 .container {
+display: flex;
+}
