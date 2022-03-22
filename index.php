@@ -1,8 +1,8 @@
 <?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/header.php');
     ?>
+    <link rel="stylesheet" href="css/slick.css">
     <div class="main__banner">
-        <img class="main__banner-image" src="img/main_banner.jpg" alt="banner image">
         <div class="container">
             <div class="main__banner_content">
                 <div class="main__banner_text">
@@ -10,7 +10,22 @@
                     Здоровье – это одна из главных человеческих ценностей. Хотите воспользоваться качественными медицинскими услугами для всей семьи? Обратитесь в Семейную клинику Неболейка. Здесь работают специалисты, которые обязательно помогут решить вашу проблему со
                     здоровьем, проведут грамотную диагностику и назначат эффективный курс лечения.
                 </div>
-                <a href="#" class="main__banner-button button" data-hystmodal="#myModal">
+                <div class="main__banner_mobile_wrapper">
+                    <div class="main__banner_mobile_text_wrapper">
+                        <div class="main__banner_mobile_title">
+                        <b>8</b> ЛЕТ ОПЫТА
+                        </div>
+                        <div class="main__banner_mobile_text">
+                            средний стаж работы<br>наших врачей
+                        </div>
+                    </div>
+                    <img src="img/main_mobile_background.png" class="main__mobile_background" alt="background">
+                    <img src="img/main_mobile_mask.svg" class="main_mobile_mask" alt="icon">
+                    <img src="img/icon_heart.svg" class="main_mobile_heart" alt="icon">
+                    <img src="img/icon_shield.png" class="main_mobile_shield" alt="icon">
+
+                </div>
+                <a href="#" class="main__banner-button button" data-hystmodal="#registerModal">
                     Записаться на приём
                 </a>
             </div>
@@ -65,7 +80,8 @@
                 </a>
             </div>
             <div class="main__services_bottom">
-                <div class="cards">
+                <div class="cards mobile__cards">
+                   <div class="card__wrapper">
                     <div class="card">
                         <img class="card__icon" src="img/card_icon_doc.svg" alt="icon">
                         <div class="card__title">
@@ -78,6 +94,8 @@
                             подробнее
                         </a>
                     </div>
+                </div>
+                <div class="card__wrapper">
                     <div class="card">
                         <img class="card__icon" src="img/card_icon_back.svg" alt="icon">
                         <div class="card__title">
@@ -90,6 +108,8 @@
                             подробнее
                         </a>
                     </div>
+                </div>
+                <div class="card__wrapper">
                     <div class="card">
                         <img class="card__icon" src="img/card_icon_waist.svg" alt="icon">
                         <div class="card__title">
@@ -102,6 +122,8 @@
                             подробнее
                         </a>
                     </div>
+                </div>
+                <div class="card__wrapper">
                     <div class="card">
                         <img class="card__icon" src="img/card_icon_flask.svg" alt="icon">
                         <div class="card__title">
@@ -115,13 +137,17 @@
                         </a>
                     </div>
                 </div>
+                </div>
+                <a href="services.php" class="main__services-button button">
+                    Смотреть все услуги
+                </a>
             </div>
         </div>
     </div>
     <div class="main__docs">
         <div class="container">
             <div class="main__docs_top_content">
-                <h2 class="main__docs_top-title">У нас работают врачи высшей категории</h2>
+                <h2 class="main__docs_top-title">У нас работают<br>врачи высшей категории</h2>
                 <div class="main__docs_top-text">с опытом от 5 лет</div>
             </div>
             <div class="main__docs_slider">
@@ -314,6 +340,9 @@
 
                 </div>
             </div>
+            <a href="specs.php" class="main__docs_mobile_button button">
+                Все специалисты
+            </a>
         </div>
     </div>
     <div class="main__mission">
@@ -334,10 +363,10 @@
                     </div>
                 </div>
                 <div class="main__mission_content">
-                    <div class="main__mission_title">
+                    <h2 class="main__mission_title">
                         Семейная клиника “Неболейка”
 
-                    </div>
+                    </h2>
                     <div class="main__mission_text">
                         Клиника специализируется на оказании амбулаторно-поликлинической и лечебно-диагностической помощи. В клинике ведут прием следующие специалисты: педиатр, терапевт, невролог, кардиолог, офтальмолог, врач ультразвуковой диагностики. В нашей клинике можно
                         сдать любые анализы, воспользоваться услугами процедурного кабинета, поставить прививки детям и взрослым, сделать ЭКГ, холтер ЭКГ и СМАД. Также у нас возможно оформление и выдачи медицинской документации, в том числе и листков
@@ -352,11 +381,17 @@
         </div>
     </div>
     <div class="main_contacts">
-        <img class="main_contacts_background" src="img/contacts_background.jpg" alt="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeb21351dc8f70088fbd9d62f3b2633d08a9516e94fb413a1ea3b6b3a10a26d39&amp;source=constructor" class="main_contacts_map" width="100%" height="778" frameborder="0"></iframe>
         <div class="container">
             <div class="main_contacts_content">
                 <div class="main_contacts_title">
                     Контакты
+                </div>
+                <div class="contacts__data_time">
+                    <div class="contacts__data_title">
+                        Режим работы:
+                    </div>
+                    <div class="contacts__data_text"><em>Пн-Пт</em>   7:30-20:00<br><em>Сб</em>   9:00-14:00</div>
                 </div>
                 <div class="main_contacts_tel">
                     <div class="main_contacts_tel_title contacts__title">
@@ -414,7 +449,7 @@
                         <div class="main__registration_text">
                             Оставьте свои данные и наш администратор свяжется с вами в ближайшее время Либо звоните по телефону <em>+7 (4012) 000-000</em>
                         </div>
-                        <a href="#" class="main__docs_button button" data-hystmodal="#myModal">
+                        <a href="#" class="main__docs_button button" data-hystmodal="#registerModal">
                             Записаться на приём
                         </a>
                     </div>
@@ -425,3 +460,5 @@
     <?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/footer.php');
     ?>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>

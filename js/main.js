@@ -1,18 +1,66 @@
 // BURGER________________________________
 
 document.querySelector('.menu__icon').addEventListener('click', event => {
-    document.querySelectorAll('.line, .header__menu').forEach(element => element.classList.toggle('active'));
-    document.querySelector('body').classList.toggle('lock');
+    document.querySelectorAll('.line, .header__panel').forEach(element => element.classList.toggle('active'));
+    document.querySelector('html').classList.toggle('lock');
 });
 
-document.querySelectorAll('.header__link').forEach(element => element.addEventListener('click', event => {
-        document.querySelectorAll('.line, .header__menu').forEach(element => element.classList.remove('active'));
-        document.querySelector('body').classList.remove('lock');
-    })
+// document.querySelectorAll('.header__link').forEach(element => element.addEventListener('click', event => {
+//         document.querySelectorAll('.line, .header__menu').forEach(element => element.classList.remove('active'));
+//         document.querySelector('body').classList.remove('lock');
+//     })
 
-);
+// );
 
+// ___________________FOOTER ACCORDEON
+if (window.matchMedia("(max-width: 1150px)").matches) {
+    
+        const footerTitles = document.querySelectorAll(".footer__title");
+        
+        footerTitles.forEach(item => item.addEventListener('click', toggleMain));
+        
+        function toggleMain() {
+            
+            const accContent = this.nextElementSibling;
+        this.classList.toggle('closed');
+            accContent.classList.toggle('closed');
+        
+        }
+    
+      }
 
+      // ___________________MAIN PAGE MOBILE SLIDER
+if (window.matchMedia("(max-width: 640px)").matches) {
+    $(document).ready(function() {
+        $('.mobile__cards').slick({
+            infinite: true,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            draggable: true,
+            speed: 500,
+            waitForAnimate: false,
+            centerPadding: '90px',
+            // prevArrow: $('.prev_arrow'),
+            // nextArrow: $('.next_arrow'),
+            responsive: [{
+                    breakpoint: 500,
+                    settings: {
+                        centerPadding: '90px',
+                    }
+                },
+    
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+             ]
+    
+        });
+    });
+
+    
+      }
 // FORM SELECT HANDLER________________________________
 let services1 = document.getElementById('service_items1');
 let services2 = document.getElementById('service_items2');
@@ -36,6 +84,11 @@ serviceSelector.onchange = function() {
 // CONTACT FORM MODAL WINDOW__________________________________
 
 const myModal = new HystModal({
+    linkAttributeName: "data-hystmodal",
+});
+// REVIEWS PAGE MODAL WINDOW__________________________________
+
+const reviewModal = new HystModal({
     linkAttributeName: "data-hystmodal",
 });
 
@@ -89,32 +142,61 @@ $(document).ready(function() {
         }
     });
 });
+$(document).ready(function(){
+    
+    $('.popup-gallery').owlCarousel({
+        loop:true,
+        
+        nav:false,
+        dots: true,
+        center: false,
+        items:1,
+        margin:25,
+        
+        responsive:{
 
-$(document).ready(function() {
-    $('.popup-gallery').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        speed: 500,
-        waitForAnimate: false,
-        centerPadding: '85px',
-        prevArrow: $('.prev_arrow'),
-        nextArrow: $('.next_arrow'),
-        // responsive: [{
-        //         breakpoint: 1900,
-        //         settings: {
-        //             slidesToShow: 6,
-        //         }
-        //     },
+            640:{
+                center: true,
+                dots:false,
+                nav: true
+            },
+            1280:{
+                margin:825,
+                items:2,
+                center: false,
+                dots:false,
+                nav: true
+            },
 
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-        //  ]
+        }
+    })
+  });
+  
+// $(document).ready(function() {
+//     $('.popup-gallery').slick({
+//         infinite: true,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         centerMode: true,
+//         speed: 500,
+//         waitForAnimate: false,
+//         centerPadding: '85px',
+//         prevArrow: $('.prev_arrow'),
+//         nextArrow: $('.next_arrow'),
+//         // responsive: [{
+//         //         breakpoint: 1900,
+//         //         settings: {
+//         //             slidesToShow: 6,
+//         //         }
+//         //     },
 
-    });
-});
+//         // You can unslick at a given breakpoint now by adding:
+//         // settings: "unslick"
+//         // instead of a settings object
+//         //  ]
+
+//     });
+// });
 
 // CONTACTS PHOTO
 
@@ -180,31 +262,42 @@ function toggleNest() {
 // NEWS PAGE SLIDER________________________________________
 
 
-$(document).ready(function() {
-    $('.news__page_slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        centerMode: true,
-        speed: 500,
-        waitForAnimate: false,
-        centerPadding: '137px',
-        prevArrow: $('.prev_arrow'),
-        nextArrow: $('.next_arrow'),
-        // responsive: [{
-        //         breakpoint: 1900,
-        //         settings: {
-        //             slidesToShow: 6,
-        //         }
-        //     },
 
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-        //  ]
-
+if (window.matchMedia("(min-width: 640px)").matches) {
+    
+    $(document).ready(function() {
+        $('.news__page_slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            centerMode: true,
+            speed: 500,
+            waitForAnimate: false,
+            centerPadding: '137px',
+            prevArrow: $('.prev_arrow'),
+            nextArrow: $('.next_arrow'),
+            // responsive: [{
+            //         breakpoint: 1900,
+            //         settings: {
+            //             slidesToShow: 6,
+            //         }
+            //     },
+    
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+            //  ]
+    
+        });
     });
-});
+
+
+
+
+  }
+
+
+
 
 // __________________________________________________________________________
 
@@ -264,60 +357,62 @@ $(document).ready(function() {
 //     req.send(new FormData(event.target));
 // };
 
-
+// ___________________________FORM VALIDATION
 
   let registerForm = document.getElementById('form');
-    let registerButton = document.getElementById('register_submit');
-    let nameInput = document.getElementById('name');
-    let dateInput = document.getElementById('date');
-    let timeInput = document.getElementById('time');
-    let telInput = document.getElementById('phone');
-    let serviceInput = document.getElementById('service_type');
 
-    let requiredInputs = [nameInput, dateInput, timeInput, telInput, serviceInput];
-
-    // console.log(requiredInputs);
-
-
-
- 
 
     registerForm.addEventListener('submit', event => {
+
+        let nameInput = document.getElementById('name');
+        let dateInput = document.getElementById('date');
+        let timeInput = document.getElementById('time');
+        let telInput = document.getElementById('phone');
+        let serviceInput = document.getElementById('service_type');
     
+        let requiredInputs = [nameInput, dateInput, timeInput, telInput, serviceInput];
+
         requiredInputs.forEach((input) => {
-            // console.log(input.value)
-            // event.preventDefault();
-            // input.classList.add('error');
+
             if (input.value=="") {
                 event.preventDefault();
                 input.classList.add('error');
                 setTimeout(removeRed,2000);
+                
                 function removeRed(){
-                    
                     input.classList.remove('error');
                 }
             }
-
         });
   
-        
+      });
+
+
+      let callRegisterForm = document.getElementById('call__form');
+
+    callRegisterForm.addEventListener('submit', event => {
+
+        let callNameinput = document.getElementById('call__name');
+        let callTelinput = document.getElementById('call__phone');
+        let specInput = document.getElementById('spec__name');
+        let addrInput = document.getElementById('call__adress');
     
+        let callRequiredinputs = [callNameinput, callTelinput, specInput, addrInput];
+
+        callRequiredinputs.forEach((input) => {
+
+            if (input.value=="") {
+                event.preventDefault();
+                input.classList.add('error');
+                setTimeout(removeRed,2000);
+               
+                function removeRed(){
+                    input.classList.remove('error');
+                }
+            }
+        });
+  
       });
 
 
 
-//   registerForm.addEventListener('submit', event => {
-    
-    
-//     if (nameInput.value=="") {
-//         event.preventDefault();
-//         nameInput.classList.add('error');
-//         setTimeout(test,1300);
-//     } else if (dateInput.value=="") {
-//         event.preventDefault();
-//         dateInput.classList.add('error');
-        
-//     }
-    
-
-//   });

@@ -40,7 +40,9 @@
                 <div class="massage__items_wrapper">
                     <div class="massage__item msg1">
                         <div class="massage__bubble bubble1"></div>
+                        <div class="massage__image_wrapper massage__mobile1">
                         <img src="img/massage1.png" alt="background" class="massage__img massage1">
+                        </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Взрослый массаж
@@ -57,7 +59,11 @@
                     </div>
                     <div class="massage__item msg2">
                         <div class="massage__bubble bubble2"></div>
+                        <div class="massage__image_wrapper massage__mobile2">
+
                         <img src="img/massage2.png" alt="background" class="massage__img massage2">
+
+                    </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Классический массаж
@@ -74,7 +80,9 @@
                     </div>
                     <div class="massage__item msg3">
                         <div class="massage__bubble bubble3"></div>
+                        <div class="massage__image_wrapper massage__mobile3">
                         <img src="img/massage3.png" alt="background" class="massage__img massage3">
+                        </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Детский массаж
@@ -91,7 +99,9 @@
                     </div>
                     <div class="massage__item msg4">
                         <div class="massage__bubble bubble4"></div>
+                        <div class="massage__image_wrapper massage__mobile4">
                         <img src="img/massage4.png" alt="background" class="massage__img massage4">
+                        </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Массаж ног
@@ -107,7 +117,9 @@
                     </div>
                     <div class="massage__item msg5">
                         <div class="massage__bubble bubble5"></div>
+                        <div class="massage__image_wrapper massage__mobile5">
                         <img src="img/massage5.png" alt="background" class="massage__img massage5">
+                        </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Массаж спины
@@ -123,7 +135,9 @@
                     </div>
                     <div class="massage__item msg6">
                         <div class="massage__bubble bubble6"></div>
+                        <div class="massage__image_wrapper massage__mobile6">
                         <img src="img/massage6.png" alt="background" class="massage__img massage6">
+                        </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Лимфодренажный массаж
@@ -140,7 +154,9 @@
                     </div>
                     <div class="massage__item msg7">
                         <div class="massage__bubble bubble7"></div>
+                        <div class="massage__image_wrapper massage__mobile7">
                         <img src="img/massage7.png" alt="background" class="massage__img massage7">
+                        </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Спортивный массаж
@@ -157,7 +173,9 @@
                     </div>
                     <div class="massage__item msg8">
                         <div class="massage__bubble bubble8"></div>
+                        <div class="massage__image_wrapper massage__mobile8">
                         <img src="img/massage8.png" alt="background" class="massage__img massage8">
+                        </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Мануальная терапия
@@ -174,7 +192,9 @@
                     </div>
                     <div class="massage__item msg9">
                         <div class="massage__bubble bubble9"></div>
+                        <div class="massage__image_wrapper massage__mobile9">
                         <img src="img/massage9.png" alt="background" class="massage__img massage9">
+                        </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Шейного отдела
@@ -192,7 +212,9 @@
                     </div>
                     <div class="massage__item msg10">
                         <div class="massage__bubble bubble10"></div>
+                        <div class="massage__image_wrapper massage__mobile10">
                         <img src="img/massage10.png" alt="background" class="massage__img massage10">
+                        </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Остеопатия
@@ -210,7 +232,9 @@
                     </div>
                     <div class="massage__item msg11">
                         <div class="massage__bubble bubble11"></div>
+                        <div class="massage__image_wrapper massage__mobile11">
                         <img src="img/massage11.png" alt="background" class="massage__img massage11">
+                    </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Висцеральный массаж
@@ -228,7 +252,9 @@
                     </div>
                     <div class="massage__item msg12">
                         <div class="massage__bubble bubble12"></div>
+                        <div class="massage__image_wrapper massage__mobile12">
                         <img src="img/massage12.png" alt="background" class="massage__img massage12">
+                        </div>
                         <div class="massage__item_wrapper">
                             <div class="massage__item_title">
                                 Антицеллюлитный

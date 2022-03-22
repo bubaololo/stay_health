@@ -68,6 +68,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="spec__card spec3">
                         <div class="spec__card_content">
                             <div class="spec__card_content_inner">
@@ -87,6 +88,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="spec__card spec4">
                         <div class="spec__card_content">
                             <div class="spec__card_content_inner">
@@ -106,6 +108,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="spec__card spec5">
                         <div class="spec__card_content">
                             <div class="spec__card_content_inner">
@@ -125,6 +128,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="spec__card spec6">
                         <div class="spec__card_content">
                             <div class="spec__card_content_inner">
@@ -135,7 +139,6 @@
                                 <span class="spec__skill">
                                 Педиатр
                             </span>
-
                                 <div class="massage__item_link">
                                     <a href="spec_card.php" class="card__link">
                                 подробнее
@@ -144,6 +147,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="spec__card spec7">
                         <div class="spec__card_content">
                             <div class="spec__card_content_inner">
@@ -154,7 +158,6 @@
                                 <span class="spec__skill">
                                 Педиатр
                             </span>
-
                                 <div class="massage__item_link">
                                     <a href="spec_card.php" class="card__link">
                                 подробнее
@@ -163,6 +166,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="spec__card spec8">
                         <div class="spec__card_content">
                             <div class="spec__card_content_inner">
@@ -173,7 +177,6 @@
                                 <span class="spec__skill">
                                 Педиатр
                             </span>
-
                                 <div class="massage__item_link">
                                     <a href="spec_card.php" class="card__link">
                                 подробнее
@@ -182,6 +185,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="spec__card spec9">
                         <div class="spec__card_content">
                             <div class="spec__card_content_inner">
@@ -192,7 +196,6 @@
                                 <span class="spec__skill">
                                 Педиатр
                             </span>
-
                                 <div class="massage__item_link">
                                     <a href="spec_card.php" class="card__link">
                                 подробнее
@@ -201,6 +204,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="spec__card spec10">
                         <div class="spec__card_content">
                             <div class="spec__card_content_inner">
@@ -211,7 +215,6 @@
                                 <span class="spec__skill">
                                 Педиатр
                             </span>
-
                                 <div class="massage__item_link">
                                     <a href="spec_card.php" class="card__link">
                                 подробнее
@@ -220,6 +223,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="spec__card spec11">
                         <div class="spec__card_content">
                             <div class="spec__card_content_inner">
@@ -230,7 +234,6 @@
                                 <span class="spec__skill">
                                 Педиатр
                             </span>
-
                                 <div class="massage__item_link">
                                     <a href="spec_card.php" class="card__link">
                                 подробнее
@@ -239,6 +242,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="spec__card spec12">
                         <div class="spec__card_content">
                             <div class="spec__card_content_inner">
@@ -249,7 +253,6 @@
                                 <span class="spec__skill">
                                 Педиатр
                             </span>
-
                                 <div class="massage__item_link">
                                     <a href="spec_card.php" class="card__link">
                                 подробнее
@@ -258,6 +261,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>

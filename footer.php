@@ -15,11 +15,11 @@
                     </a>
                 </div>
                 <div class="footer__column fc2">
-                    <div class="footer__title">
+                    <div class="footer__title closed">
                         Меню
                         <div class="footer__title_line"></div>
                     </div>
-                    <nav>
+                    <nav class="closed">
                         <a href="#" class="footer__link">
                             Главная
                         </a>
@@ -41,11 +41,11 @@
                     </nav>
                 </div>
                 <div class="footer__column fc3">
-                    <div class="footer__title">
+                    <div class="footer__title closed">
                         Приём специалистов
                         <div class="footer__title_line"></div>
                     </div>
-                    <nav>
+                    <nav class="closed">
                         <a href="#" class="footer__link">
                             Педиатр
                         </a>
@@ -64,11 +64,11 @@
                     </nav>
                 </div>
                 <div class="footer__column fc4">
-                    <div class="footer__title">
+                    <div class="footer__title closed">
                         Массаж
                         <div class="footer__title_line"></div>
                     </div>
-                    <nav>
+                    <nav class="closed">
                         <a href="#" class="footer__link">
                             Взрослые массажи
                         </a>
@@ -87,6 +87,26 @@
                         <a href="#" class="footer__link">
                             Лимфодренажные
                         </a>
+                        <div class="footer__massage_mobile">
+                            <a href="#" class="footer__link">
+                                Спортивные
+                            </a>
+                            <a href="#" class="footer__link">
+                                Мануальная терапия
+                            </a>
+                            <a href="#" class="footer__link">
+                                Шейного отдела
+                            </a>
+                            <a href="#" class="footer__link">
+                                Остеопатия
+                            </a>
+                            <a href="#" class="footer__link">
+                                Антицеллюлитные
+                            </a>
+                            <a href="#" class="footer__link">
+                                Висцеральный массаж
+                            </a>
+                        </div>
                     </nav>
                 </div>
                 <div class="footer__column fc5">
@@ -114,7 +134,7 @@
 
                 <div class="footer__column fc6">
                     <div class="footer__right_links">
-                        <a href="#" class="footer__right_bold">
+                        <a href="#" class="footer__right_bold footer__weight">
                             Программы<br>с лишним весом
                         </a>
                         <a href="#" class="footer__right_bold">
@@ -149,7 +169,18 @@
                                 +7 (4012) 000-000
                             </a>
                         </div>
-                        <a href="#" class="header__button button" data-hystmodal="#myModal">
+                        <div class="footer__mob_bottom">
+                            <div class="footer__copyright">
+                                © ООО “Неболейка”<br>Все права защищены 2021
+                            </div>
+                            <a href="#" class="footer__policy">
+                                Политика конфидециальности
+                            </a>
+                            <a href="#" class="footer__license">
+                                Лицензии
+                            </a>
+                        </div>
+                        <a href="#" class="header__button button" data-hystmodal="#registerModal">
                             Записаться на приём
                         </a>
                     </div>
@@ -158,7 +189,7 @@
         </div>
 </footer>
 <section class="register__form">
-    <div class="hystmodal" id="myModal" aria-hidden="true">
+    <div class="hystmodal" id="registerModal" aria-hidden="true">
         <div class="hystmodal__wrap">
             <div class="hystmodal__window" role="dialog" aria-modal="true">
                 <button data-hystclose class="hystmodal__close" id="main_form_close">Close</button>
@@ -223,7 +254,7 @@
                                     <!-- <a href="#" class="header__button button" data-hystmodal="#myModal">
                                         Записаться на приём
                                     </a> -->
-                                    <button id="register_submit" class="submit_button button blue_button">Отправить</button>
+                                    <button id="register_submit" data-hystmodal="#registerModal" class="submit_button button blue_button">Отправить</button>
                                 </div>
                                 <div class="checkbox__wrapper">
                                     <label class="check option">
@@ -249,75 +280,7 @@
 
 
 
-<!-- //DOCTOR_CALL_______________________________________________________ -->
-<!-- <div class="hystmodal" id="myModal" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close" id="main_form_close">Close</button>
-            <section class="form">
-                <div class="container">
-                    <div class="form__wrapper">
-                        <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
-                            <div class="form__top">
-                                <h2 class="form__title title">
-                                    Вызвать врача на дом
-                                </h2>
-                                <div class="form__input_wrapper">
-                                    <div class="form__item">
-                                        <input id="name" type="text" name="name" class="form_input" placeholder="Имя">
-                                    </div>
-                                    <div class="form__item">
-                                        <input id="last_name" type="text" name="last_name" class="form_input" placeholder="Фамилия">
-                                    </div>
-                                    <div class="form__item">
-                                        <select name="spec" id="form_spec">
-                                            <option value="" disabled selected>Выберите специалиста</option>
-                                            <option value="dantist">Стоматолог</option>
-                                            <option value="diet">Диетолог</option>
-                                        </select>
-                                    </div>
-                                    <div class="form__item">
-                                        <input id="phone" type="tel" name="phone" class="form_input _req" placeholder="+7___-___-__-__">
-                                    </div>
-                                    <div class="form__item">
-                                        <input id="adress" type="text" name="adress" class="form_input" placeholder="Ваш адрес">
-                                    </div>
 
-
-                                    <div class="form__item">
-
-                                        <textarea id="comment" name="comment" class="form_input" placeholder="Комментарий к записи"></textarea>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                            <div class="form__bottom">
-                                <div class="form__send">
-                                    <div class="form__send_button">
-
-                                        <input type="submit" class="submit_button button">
-                                    </div>
-                                    <div class="checkbox__wrapper">
-                                        <input type="checkbox" required>
-                                        <div class="checkbox__disclaimer">
-                                            Я согласен с правилами обработки персональных данных и ознакомлен с Политикой конфидециальности
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="form__send_disclaimer">
-                                    Al hacer clic en el botón, acepta el procesamiento de datos personales.
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-        </div>
-        </section>
-    </div>
-</div> -->
 
 
 <!-- <div class="hystmodal" id="confirm" aria-hidden="true">
@@ -334,7 +297,7 @@
     </div>
 </div> -->
 <script src="/js/jquery-3.6.0.min.js"></script>
-<script src="/js/owl.carousel.min.js"></script>
+
 <script src="/js/hystmodal.min.js"></script>
 <script src="/js/main.js"></script>
 

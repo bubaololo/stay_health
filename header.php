@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <!-- <link rel="stylesheet" href="css/glider.css"> -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/media.css"> -->
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 
@@ -43,9 +43,15 @@
                                 +7 (4012) 000-000
                             </a>
                     </div>
-                    <a href="#" class="header__button button" data-hystmodal="#myModal">
+                    <a href="#" class="header__button button" data-hystmodal="#registerModal">
                     Записаться на приём
                 </a>
+                
+                <div class="menu__icon">
+                    <div class="menu__line_top line"></div>
+                    <div class="menu__line_middle line"></div>
+                    <div class="menu__line_bottom line"></div>
+                </div>
                 </div>
                 <nav class="header__menu">
                     <a href="/" class="header__menu_item" aria-label="0">
@@ -71,16 +77,9 @@
                 </a>
                 </nav>
 
-                <div class="menu__icon">
-                    <div class="menu__line_top line"></div>
-                    <div class="menu__line_middle line"></div>
-                    <div class="menu__line_bottom line"></div>
-                </div>
 
 
-                <nav class="header__menu">
-
-                </nav>
+ 
             </div>
 
         </div>
@@ -173,6 +172,9 @@
                         Процедурный кабинет с забором анализов
                     </a>
                     </div>
+                    <a href="services.php" class="panel__link_services mobile__link_services" aria-label="0">
+                        На страницу услуг
+                    </a>
                     <div class="panel__buttons">
                         <a href="services_prices.php" class="button__blue">
                         Услуги и цены

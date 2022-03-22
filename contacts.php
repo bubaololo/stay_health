@@ -3,9 +3,9 @@
     ?>
     <link rel="stylesheet" href="css/magnific-popup.css">
     <div class="contacts">
-        <div class="bubbles__green bubbles">
-            <div class="big__bubble green_bubble"></div>
-            <div class="small__bubble green_bubble"></div>
+    <div class="bubbles__blue bubbles">
+    <div class="big__bubble blue_bubble"></div>
+    <div class="small__bubble blue_bubble"></div>
             <div class="container">
                 <div class="bubbles__wrapper">
 
@@ -77,7 +77,7 @@
                         Адрес:
                     </div>
                     <div class="contacts__data_text">
-                        г. Калининград,<br>Артиллерийская, 85/4
+                        г. Калининград, Артиллерийская, 85/4
                     </div>
                 </div>
                 <div class="contacts__data_email">
@@ -92,7 +92,9 @@
         </div>
         </div>
         </div>
-        <img class="contacts_map" src="img/contacts_background.jpg" alt="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeb21351dc8f70088fbd9d62f3b2633d08a9516e94fb413a1ea3b6b3a10a26d39&amp;source=constructor" class="main_contacts_map" width="100%" height="778" frameborder="0"></iframe>
+
+        <div class="main_contacts"></div>
         <div class="services__page_registration">
             <div class="main__registration">
                 <div class="container">
@@ -108,7 +110,7 @@
                                 <div class="main__registration_text">
                                     Оставьте свои данные и наш администратор свяжется с вами в ближайшее время Либо звоните по телефону <em>+7 (4012) 000-000</em>
                                 </div>
-                                <a href="#" class="main__docs_button button" data-hystmodal="#myModal">
+                                <a href="#" class="main__docs_button button" data-hystmodal="#registerModal">
                                     Записаться на приём
                                 </a>
                             </div>

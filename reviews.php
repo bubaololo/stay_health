@@ -175,7 +175,8 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews__form">
+            <div class="reviews__form" id="reviews_desktop">
+
                 <div class="form__wrapper">
                     <form enctype="multipart/form-data" method="post" id="review_form"
                         onsubmit="send(event, 'send.php')">
@@ -300,7 +301,86 @@
     </div>
 </div>
 </div>
+<div class="reviews__panel" data-hystmodal="#reviewModal">
+    
+        
+            <div class="reviews__panel_title">
+                Оставить отзыв
+            </div>
+            <img src="img/reviews_panel_icon.svg" alt="icon">
+        
+ 
+</div>
 
+
+    <div class="reviews__form hystmodal" id="reviewModal" role="dialog" aria-modal="true">
+        <button data-hystclose class="hystmodal__close" id="review__mobile_form_close">Close</button>
+        <div class="form__wrapper">
+            <form enctype="multipart/form-data" method="post" id="review_form"
+                onsubmit="send(event, 'send.php')">
+
+                <h2 class="form__title">
+                    Оставить отзыв
+                </h2>
+
+                <div class="reviews__form_top_inputs">
+                    <input id="name" type="text" name="name" class="form_input input_review_name"
+                        placeholder="Имя">
+
+
+                    <input id="email" type="email" name="email" class="form_input input_email"
+                        placeholder="E-mail">
+
+                </div>
+
+
+
+
+                <select required name="review_service_type" id="review_service_type"
+                    class="form_input review_service">
+                    <option value="" disabled selected>Услуга, которую вам оказали</option>
+                    <option value="service_items1">Массаж</option>
+                    <option value="service_items2">Косметолог</option>
+                    <option value="service_items3">Оториноларинголог</option>
+                </select>
+                <select required name="review_spec" id="review_spec" class="form_input review_spec">
+                    <option value="" disabled selected>Фио специалиста</option>
+                    <option value="service_items1">Верещагин Андрей Николаевич</option>
+                    <option value="service_items2">Олишевская Анна Александровна</option>
+                    <option value="service_items3">Канц Алёна Петровна</option>
+                </select>
+
+
+
+
+                <textarea id="review_text" name="review_text" class="form_input review_text"
+                    placeholder="Комментарий к записи"></textarea>
+
+
+
+
+
+
+                <div class="checkbox__wrapper">
+                    <label class="check option">
+                        <input type="checkbox" id="review_check" name="review_check" required
+                            class="check__input">
+                        <span class="check__box"></span>
+                    </label>
+
+                    <div class="checkbox__disclaimer">
+                        Я согласен с правилами обработки персональных данных и ознакомлен с <a
+                            href="#">Политикой конфидециальности</a>
+                    </div>
+                </div>
+                <div class="form__send_button">
+                    <button class="submit_button button ">Отправить отзыв</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
 
 <?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/footer.php');

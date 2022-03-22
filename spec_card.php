@@ -2,7 +2,7 @@
     include_once($_SERVER['DOCUMENT_ROOT'].'/header.php');
     ?>
 <link rel="stylesheet" href="css/magnific-popup.css">
-<div class="spec__card">
+<div class="spec__card_page">
     <div class="bubbles__blue bubbles">
         <div class="big__bubble blue_bubble"></div>
         <div class="small__bubble blue_bubble"></div>

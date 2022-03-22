@@ -382,7 +382,7 @@
 <!-- __________________________SECTION_________________________ -->
                 <div class="accordeon__section">
                     <div class="accordeon__section_title closed">
-                        Процедурный кабинет с забором анализов
+                        Процедурный кабинет <span class="alys_hide">с забором анализов</span>
                     </div>
                     <div class="accordeon__items closed">
                         <div class="accordeon__item">

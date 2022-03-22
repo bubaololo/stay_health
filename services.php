@@ -86,6 +86,9 @@
                     </div>
                 </div>
             </div>
+            <a href="#" class="main__services-button button">
+                Смотреть все услуги
+            </a>
         </div>
         <div class="services__page_registration">
             <div class="main__registration">

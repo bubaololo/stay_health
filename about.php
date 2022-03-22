@@ -59,7 +59,7 @@
                                 г. Калининград,<br> ул. Артиллерийская, 85/4
                             </div>
                         </div>
-                        <div class="about__contacts_item_wrapper">
+                        <div class="about__contacts_item_wrapper about__hours_wrapper">
                             <div class="contacts__hours contacts__item">
                                 Режим работы:
                             </div>
@@ -124,8 +124,8 @@
             </div>
 
 
-            <img src="/img/icon_slider_left.svg" class="prev_arrow gallery_arrow" alt="prev_arrow">
-            <img src="/img/icon_slider_right.svg" class="next_arrow gallery_arrow" alt="next_arrow">
+            <!-- <img src="/img/icon_slider_left.svg" class="prev_arrow gallery_arrow" alt="prev_arrow">
+            <img src="/img/icon_slider_right.svg" class="next_arrow gallery_arrow" alt="next_arrow"> -->
 
         </div>
         <div class="about__content_bottom">
@@ -149,3 +149,4 @@
 
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.magnific-popup.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
