@@ -1837,4 +1837,53 @@ max-width: 320px;
  padding: 0 42px;
  height: unset;
 }
+#main_form_close {
+
+	top: 19px;
+	right: 20px;
+
+}
+.spec__reception .cards {
+  grid-template-columns: 1fr;
+}
+.spec__reception .card {
+  width: 100%;
+    display: grid;
+    grid-template-columns: 59px auto;
+    grid-template-areas: "spec_icon  spec_title" "spec_icon spec_text" "spec_icon spec_link";
+    column-gap: 21px;
+    height: unset;
+    padding: 25px 22px;
+    
+  
+}
+.spec__reception .card__icon {
+  grid-area: spec_icon;
+  margin: 0;
+}
+.spec__reception .card__title {
+  grid-area: spec_title;
+  margin-bottom: 0;
+}
+.spec__reception .card__text {
+  grid-area: spec_text;
+  position: initial;
+  max-width: unset;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.spec__reception .card__link {
+  grid-area: spec_link;
+  position: relative;
+  left: 0;
+  bottom: auto;
+  margin-top: 10px;
+}
+.spec__reception .card__link::after {
+  right: 64px;
+  top: 5px;
+}
+.spec__reception .bubbles__icon {
+  top: -3px;
+}
 }
