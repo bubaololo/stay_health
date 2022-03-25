@@ -1,3 +1,5 @@
+// Выполняй весь JS после того, как загрузится DOM. Иначе будут проблеми при неправильно подключении скриптов или использовании кеширования. Событие - DOMContentLoaded
+
 $(function(){
 	$("#datepicker").datepicker();
 });
@@ -23,12 +25,13 @@ $.datepicker.setDefaults($.datepicker.regional['ru']);
 
 // BURGER________________________________
 
+// Стрелочные функции все еще довольно рисково использовать прямо вот так. Учитывая, что это медицинский сайт, есть большая вероятность, что зайдет какая-нибудь бабушка из под Opera, которую внук обновил пять лет назад, и у нее этот код работать не будет. В тот же вебпак можно засунуть бабель, который будет преобразоыввать код в более универсальный формат
 document.querySelector('.menu__icon').addEventListener('click', event => {
     document.querySelectorAll('.line, .header__panel').forEach(element => element.classList.toggle('active'));
     document.querySelector('html').classList.toggle('lock');
 });
 
-
+// Я бы разбил все на отделные функции, наприемр - initFooterAccordeon(). Тут ну нужны комментарии, потому что все понятно
 // ___________________FOOTER ACCORDEON
 if (window.matchMedia("(max-width: 1150px)").matches) {
     
@@ -59,6 +62,7 @@ if (window.matchMedia("(max-width: 640px)").matches) {
     })
 
       }
+
 
 
 // FORM SELECT HANDLER________________________________

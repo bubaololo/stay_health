@@ -2,6 +2,8 @@
     include_once($_SERVER['DOCUMENT_ROOT'].'/header.php');
     ?>
 
+    <!-- Прогони через валидатор, тут есть ошибки с незакрытми тегами https://validator.w3.org/nu/?doc=http%3A%2F%2Fpfff.gq%2F -->
+
     <div class="main__banner">
         <div class="container">
             <div class="main__banner_content">

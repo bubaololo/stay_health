@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Эти фавиконки будут рабоатть не везде. Оптимальный вариант - https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="icon" type="image/png" href="img/favicon32.png">
     <title>Неболейка</title>
     <meta name="description" content="Медицинские услуги для всей семьи">
+    <!-- Используй сборщик и собирай все css в один файл. Каждый новый файл - это новый запрос к серверу, это критично для быстродействия и, следствием, для seo -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/hystmodal.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -29,6 +31,7 @@
                     <a class="logo__link" href="/">
                         <img class="logo" src="/img/logo.svg" alt="logo">
                     </a>
+                    <!-- Если тут БЭМ, то это ошибка. __wrapper - это модификатор элемента contacts, но родительского блока нет. -->
                     <div class="contacts__wrapper">
                         <div class="contacts__adress contacts__item">
                             г. Калининград,<br> ул. Артиллерийская, 85/4
