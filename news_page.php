@@ -244,10 +244,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum orci elit sed et 
                     </div>
                 </a>
             </div>
-            <div class="news__page_buttons_wrapper">
-                <img src="/img/news_page_prev.svg" class="prev_arrow news__page_arrow" alt="prev_arrow">
-                <img src="/img/news_page_next.svg" class="next_arrow news__page_arrow" alt="next_arrow">
-            </div>
+
 
         </div>
     </div>

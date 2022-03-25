@@ -1,7 +1,7 @@
 <?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/header.php');
     ?>
-    <link rel="stylesheet" href="css/slick.css">
+
     <link rel="stylesheet" href="css/magnific-popup.css">
 
     <div class="about">
@@ -147,6 +147,6 @@
     ?>
 
 
-        <script src="js/slick.min.js"></script>
+ 
         <script src="js/jquery.magnific-popup.js"></script>
         <script src="/js/owl.carousel.min.js"></script>

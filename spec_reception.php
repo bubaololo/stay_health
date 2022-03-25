@@ -39,7 +39,7 @@
         <div class="services__page_services">
             <div class="container">
                 <div class="cards">
-                    <div class="card">
+                    <a href="#" class="card">
                         <img class="card__icon" src="img/icon_recipe_embryo.svg" alt="icon">
                         <div class="card__title">
                             Педиатр
@@ -47,11 +47,11 @@
                         <div class="card__text">
                             Оказывает широкий спектр услуг от одноразовой консультации до полноценного медицинского сопровождения детей
                         </div>
-                        <a href="#" class="card__link">
+                        <div  class="card__link">
                             подробнее
-                        </a>
-                    </div>
-                    <div class="card">
+                        </div>
+                    </a>
+                    <a href="#" class="card">
                         <img class="card__icon" src="img/icon_recipe_steto.svg" alt="icon">
                         <div class="card__title">
                             Терапевт
@@ -59,11 +59,11 @@
                         <div class="card__text">
                             Специалист широкого профиля, который осуществляет первичную диагностику, координирует, выписывает направления
                         </div>
-                        <a href="#" class="card__link">
+                        <div  class="card__link">
                             подробнее
-                        </a>
-                    </div>
-                    <div class="card">
+                        </div>
+                    </a>
+                    <a href="#" class="card">
                         <img class="card__icon" src="img/icon_recipe_brain.svg" alt="icon">
                         <div class="card__title">
                             Невролог
@@ -71,11 +71,11 @@
                         <div class="card__text">
                             Занимается лечением, диагностикой и профилактикой заболеваний неврологического характера
                         </div>
-                        <a href="#" class="card__link">
+                        <div  class="card__link">
                             подробнее
-                        </a>
-                    </div>
-                    <div class="card">
+                        </div>
+                    </a>
+                    <a href="#" class="card">
                         <img class="card__icon" src="img/icon_recipe_dna.svg" alt="icon">
                         <div class="card__title">
                             Эндокринолог
@@ -83,11 +83,11 @@
                         <div class="card__text">
                             Врач, который специализируется на заболеваниях связанных с эндокринной системой, то есть с обменом веществ, и гормональных нарушениях
                         </div>
-                        <a href="#" class="card__link">
+                        <div class="card__link">
                             подробнее
-                        </a>
-                    </div>
-                    <div class="card">
+                        </div>
+                    </a>
+                    <a href="#" class="card">
                         <img class="card__icon" src="img/icon_recipe_lips.svg" alt="icon">
                         <div class="card__title">
                             Логопед
@@ -95,10 +95,10 @@
                         <div class="card__text">
                             Специалист, который занимается устранением и корректировкой речевых нарушений у детей
                         </div>
-                        <a href="#" class="card__link">
+                        <div href="#" class="card__link">
                             подробнее
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -115,7 +115,12 @@
                                     Записаться на приём
                                 </div>
                                 <div class="main__registration_text">
-                                    Оставьте свои данные и наш администратор свяжется с вами в ближайшее время Либо звоните по телефону <em>+7 (4012) 000-000</em>
+                                    <div class="main__registration_text-top">
+                                    Оставьте свои данные и наш администратор свяжется с вами в ближайшее время
+                                </div>
+                                <div class="main__registration_text-bottom">
+                                    Либо звоните по телефону <em>+7 (4012) 000-000</em>
+                                </div>
                                 </div>
                                 <a href="#" class="main__docs_button button" data-hystmodal="#myModal">
                                     Записаться на приём

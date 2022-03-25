@@ -1,3 +1,26 @@
+$(function(){
+	$("#datepicker").datepicker();
+});
+/* Локализация datepicker */
+$.datepicker.regional['ru'] = {
+	closeText: 'Закрыть',
+	prevText: 'Предыдущий',
+	nextText: 'Следующий',
+	currentText: 'Сегодня',
+	monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+	monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+	dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+	dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+	dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+	weekHeader: 'Не',
+	dateFormat: 'dd.mm.yy',
+	firstDay: 1,
+	isRTL: false,
+	showMonthAfterYear: false,
+	yearSuffix: ''
+};
+$.datepicker.setDefaults($.datepicker.regional['ru']);
+
 // BURGER________________________________
 
 document.querySelector('.menu__icon').addEventListener('click', event => {
@@ -5,12 +28,6 @@ document.querySelector('.menu__icon').addEventListener('click', event => {
     document.querySelector('html').classList.toggle('lock');
 });
 
-// document.querySelectorAll('.header__link').forEach(element => element.addEventListener('click', event => {
-//         document.querySelectorAll('.line, .header__menu').forEach(element => element.classList.remove('active'));
-//         document.querySelector('body').classList.remove('lock');
-//     })
-
-// );
 
 // ___________________FOOTER ACCORDEON
 if (window.matchMedia("(max-width: 1150px)").matches) {
@@ -19,8 +36,8 @@ if (window.matchMedia("(max-width: 1150px)").matches) {
         
         footerTitles.forEach(item => item.addEventListener('click', toggleMain));
         
-        function toggleMain() {
-            
+        function toggleMain(evt) {
+            evt.preventDefault();
             const accContent = this.nextElementSibling;
         this.classList.toggle('closed');
             accContent.classList.toggle('closed');
@@ -31,36 +48,19 @@ if (window.matchMedia("(max-width: 1150px)").matches) {
 
       // ___________________MAIN PAGE MOBILE SLIDER
 if (window.matchMedia("(max-width: 640px)").matches) {
-    $(document).ready(function() {
-        $('.mobile__cards').slick({
-            infinite: true,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-            draggable: true,
-            speed: 500,
-            waitForAnimate: false,
-            centerPadding: '90px',
-            // prevArrow: $('.prev_arrow'),
-            // nextArrow: $('.next_arrow'),
-            responsive: [{
-                    breakpoint: 500,
-                    settings: {
-                        centerPadding: '90px',
-                    }
-                },
-    
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-             ]
-    
-        });
-    });
+    $('.mobile__cards').owlCarousel({
+        
+        loop:true,
+        margin:200,
+        nav:false,
+        dots:false,
+        item: 1,
+        center: false
+    })
 
-    
       }
+
+
 // FORM SELECT HANDLER________________________________
 let services1 = document.getElementById('service_items1');
 let services2 = document.getElementById('service_items2');
@@ -94,9 +94,34 @@ const reviewModal = new HystModal({
 
 // HEADER PANEL________________________________
 
-document.querySelector('.services_item').addEventListener('click', event => {
-    document.querySelector('.header__panel').classList.toggle('active')
-})
+let panelHandler = document.querySelector('.services_item');
+
+let headerPanel = document.querySelector('.header__panel')
+
+panelHandler.addEventListener('click', hidePanel);
+
+
+
+function hidePanel() {
+    headerPanel.classList.toggle('active');
+}
+
+if (window.matchMedia("(max-width: 640px)").matches) {
+
+    headerPanel.addEventListener('mouseout', hidePanel);
+}
+// window.addEventListener('resize', function(){
+
+// }, true);
+
+// let date = document.querySelector('.input_date');
+
+// date.addEventListener('focusin', () => {date.type='date';});
+// date.addEventListener('focusout', () => {date.type='text';});
+
+
+{/* <input placeholder="Планируемая дата" class="form_input input_date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"> */}
+
 
 
 // MAIN PAGE DOCTORS SLIDER
@@ -106,16 +131,13 @@ $(document).ready(function() {
         items: 1,
         loop: false,
         center: false,
-        margin: 0,
+        margin: 10,
         URLhashListener: true,
         startPosition: '#_1',
         mouseDrag: false,
         touchDrag: false,
         animateOut: 'fadeOut',
         dots: false,
-
-
-
 
     });
 });
@@ -142,6 +164,7 @@ $(document).ready(function() {
         }
     });
 });
+
 $(document).ready(function(){
     
     $('.popup-gallery').owlCarousel({
@@ -152,7 +175,7 @@ $(document).ready(function(){
         center: false,
         items:1,
         margin:25,
-        
+
         responsive:{
 
             640:{
@@ -167,38 +190,11 @@ $(document).ready(function(){
                 dots:false,
                 nav: true
             },
-
         }
     })
   });
   
-// $(document).ready(function() {
-//     $('.popup-gallery').slick({
-//         infinite: true,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         centerMode: true,
-//         speed: 500,
-//         waitForAnimate: false,
-//         centerPadding: '85px',
-//         prevArrow: $('.prev_arrow'),
-//         nextArrow: $('.next_arrow'),
-//         // responsive: [{
-//         //         breakpoint: 1900,
-//         //         settings: {
-//         //             slidesToShow: 6,
-//         //         }
-//         //     },
-
-//         // You can unslick at a given breakpoint now by adding:
-//         // settings: "unslick"
-//         // instead of a settings object
-//         //  ]
-
-//     });
-// });
-
-// CONTACTS PHOTO
+// CONTACTS PHOTO LIGHTBOX
 
 $(document).ready(function() {
 
@@ -211,7 +207,8 @@ $(document).ready(function() {
 	});
 
 });
-// licenses
+
+// LICENSES LIGHTBOX
 $(document).ready(function() {
     $('.licence__pics_wrapper').magnificPopup({
         delegate: 'a',
@@ -261,116 +258,41 @@ function toggleNest() {
 
 // NEWS PAGE SLIDER________________________________________
 
-
-
 if (window.matchMedia("(min-width: 640px)").matches) {
     
-    $(document).ready(function() {
-        $('.news__page_slider').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            centerMode: true,
-            speed: 500,
-            waitForAnimate: false,
-            centerPadding: '137px',
-            prevArrow: $('.prev_arrow'),
-            nextArrow: $('.next_arrow'),
-            // responsive: [{
-            //         breakpoint: 1900,
-            //         settings: {
-            //             slidesToShow: 6,
-            //         }
-            //     },
+
+    $(document).ready(function(){
     
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-            //  ]
+        $('.news__page_slider').owlCarousel({
+            loop:true,
+            nav:true,
+            dots: false,
+            center: true,
+            items:4,
+            margin:25,
     
-        });
-    });
-
-
-
+        })
+      });
 
   }
 
 
-
-
-// __________________________________________________________________________
-
-// new Glider(document.querySelector('.glider__top'), {
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     duration: 15,
-//     draggable: true,
-//     dots: '.dots',
-//     arrows: {
-//         prev: '.glider-prev',
-//         next: '.glider-next'
-//     }
-// });
-
-// new Glider(document.querySelector('.glider__bottom'), {
-//     slidesToShow: 2,
-//     scrollLock: true,
-//     duration: 5,
-//     draggable: true,
-//     rewind: true,
-
-//     arrows: {
-//         prev: '.glider__bottom-prev',
-//         next: '.glider__bottom-next'
-//     }
-// });
-
-// PHP_MAILER______________________
-
-// function send(event, php) {
-//     // console.log("Отправка запроса");
-//     event.preventDefault ? event.preventDefault() : event.returnValue = false;
-//     var req = new XMLHttpRequest();
-//     req.open('POST', php, true);
-//     req.onload = function() {
-//         if (req.status >= 200 && req.status < 400) {
-//             json = JSON.parse(this.response); // Ебанный internet explorer 11
-            
-
-//             // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
-//             if (json.result == "success") {
-//                 // Если сообщение отправлено
-//                 document.getElementById("form").reset();
-//                 document.getElementById("main_form_close").click()
-//                 myModal.open('#confirm');
-//             } else {
-//                 // Если произошла ошибка
-//                 alert("Ошибка. Сообщение не отправлено");
-//             }
-//             // Если не удалось связаться с php файлом
-//         } else { alert("Ошибка сервера. Номер: " + req.status); }
-//     };
-
-//     // Если не удалось отправить запрос. Стоит блок на хостинге
-//     req.onerror = function() { alert("Ошибка отправки запроса"); };
-//     req.send(new FormData(event.target));
-// };
 
 // ___________________________FORM VALIDATION
 
   let registerForm = document.getElementById('form');
 
 
-    registerForm.addEventListener('submit', event => {
+let nameInput = document.getElementById('name');
+let dateInput = document.getElementById('datepicker');
+let timeInput = document.getElementById('time');
+let telInput = document.getElementById('phone');
+let serviceInput = document.getElementById('service_type');
+let requiredInputs = [nameInput, dateInput, timeInput, telInput, serviceInput];
 
-        let nameInput = document.getElementById('name');
-        let dateInput = document.getElementById('date');
-        let timeInput = document.getElementById('time');
-        let telInput = document.getElementById('phone');
-        let serviceInput = document.getElementById('service_type');
+let submitButton = document.querySelector('.submit_button');
     
-        let requiredInputs = [nameInput, dateInput, timeInput, telInput, serviceInput];
+    registerForm.addEventListener('submit', event => {
 
         requiredInputs.forEach((input) => {
 
@@ -384,8 +306,49 @@ if (window.matchMedia("(min-width: 640px)").matches) {
                 }
             }
         });
-  
       });
+
+      requiredInputs.forEach((input) => {
+
+        input.addEventListener('input', () => {
+            
+           let validateStatus = requiredInputs.some(input => input.value == '');
+           
+           if(!validateStatus) {
+               submitButton.classList.remove('blue_button');
+           }
+
+        }, false);
+
+    });
+
+// console.log(timeInput.value);
+
+
+
+
+// SELECT INPUTS GRAY __________________________________
+
+
+      let selects  = document.querySelectorAll('.gray_select');
+
+      selects.forEach((select) => {
+
+
+        select.addEventListener("change", () => {
+
+
+            if (select.classList.contains('gray') && select.value !=="") {
+                select.classList.remove('gray');
+            } else {select.classList.add('gray');}
+     
+         
+           }, false);
+
+
+    });
+
+
 
 
       let callRegisterForm = document.getElementById('call__form');
@@ -411,8 +374,10 @@ if (window.matchMedia("(min-width: 640px)").matches) {
                 }
             }
         });
-  
       });
+
+
+
 
 
 

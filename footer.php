@@ -41,10 +41,10 @@
                     </nav>
                 </div>
                 <div class="footer__column fc3">
-                    <div class="footer__title closed">
+                    <a href="specs.php" class="footer__title closed">
                         Приём специалистов
                         <div class="footer__title_line"></div>
-                    </div>
+                    </a>
                     <nav class="closed">
                         <a href="#" class="footer__link">
                             Педиатр
@@ -64,10 +64,10 @@
                     </nav>
                 </div>
                 <div class="footer__column fc4">
-                    <div class="footer__title closed">
+                    <a href="massage.php" class="footer__title closed">
                         Массаж
                         <div class="footer__title_line"></div>
-                    </div>
+                    </a>
                     <nav class="closed">
                         <a href="#" class="footer__link">
                             Взрослые массажи
@@ -196,7 +196,7 @@
                 <section class="form">
 
                     <div class="form__wrapper">
-                        <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                        <form enctype="multipart/form-data" method="post" id="form" >
                             <div class="form__top">
                                 <h2 class="form__title">
                                     Записаться на приём
@@ -210,17 +210,17 @@
 
 
                                     <!-- <input type="date" id="date" name="date" class="form_input input_date"> -->
-                                    <input placeholder="Планируемая дата" class="form_input input_date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                                    <input placeholder="Планируемая дата" class="form_input input_date" type="text"  id="datepicker">
 
 
-                                    <select name="time" id="time" class="form_input input_time">
+                                    <select name="time" id="time" class="form_input input_time gray_select gray">
                                         <option value="" disabled selected>Время</option>
                                         <option value="8">8:00</option>
                                         <option value="12">12:00</option>
                                         <option value="14">14:00</option>
                                         <option value="16">16:00</option>
                                     </select>
-                                    <select name="service_type" id="service_type" class="form_input input_service">
+                                    <select name="service_type" id="service_type" class="form_input input_service gray_select gray">
                                             <option value="" disabled selected>Выберите тип услуги</option>
                                             <option value="service_items1">Массаж</option>
                                             <option value="service_items2">Косметолог</option>
@@ -230,7 +230,7 @@
                                 </div>
                                 <div class="custom__services">
                                     <select name="service_items1" id="service_items1" class="form_input hide">
-                                            <option value="" class="select_placeholder">Взрослый массаж</option>
+                                            <option value="" class="select_placeholder ">Взрослый массаж</option>
                                             <option value="">Детский массаж</option>
                                             <option value="">Женский массаж</option>
                                         </select>
@@ -254,7 +254,8 @@
                                     <!-- <a href="#" class="header__button button" data-hystmodal="#myModal">
                                         Записаться на приём
                                     </a> -->
-                                    <button id="register_submit" data-hystmodal="#registerModal" class="submit_button button blue_button">Отправить</button>
+                                    <button  data-hystmodal="#registerModal" class="submit_button button blue_button">Отправить</button>
+                                    <input type="submit" id="register_submit" class="submit_btn">
                                 </div>
                                 <div class="checkbox__wrapper">
                                     <label class="check option">
@@ -297,7 +298,8 @@
     </div>
 </div> -->
 <script src="/js/jquery-3.6.0.min.js"></script>
-
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
 <script src="/js/hystmodal.min.js"></script>
 <script src="/js/main.js"></script>
 

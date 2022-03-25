@@ -1,7 +1,7 @@
 <?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/header.php');
     ?>
-    <link rel="stylesheet" href="css/slick.css">
+
     <div class="main__banner">
         <div class="container">
             <div class="main__banner_content">
@@ -22,7 +22,7 @@
                     <img src="img/main_mobile_background.png" class="main__mobile_background" alt="background">
                     <img src="img/main_mobile_mask.svg" class="main_mobile_mask" alt="icon">
                     <img src="img/icon_heart.svg" class="main_mobile_heart" alt="icon">
-                    <img src="img/icon_shield.png" class="main_mobile_shield" alt="icon">
+                    <img src="img/icon_shield.svg" class="main_mobile_shield" alt="icon">
 
                 </div>
                 <a href="#" class="main__banner-button button" data-hystmodal="#registerModal">
@@ -82,7 +82,7 @@
             <div class="main__services_bottom">
                 <div class="cards mobile__cards">
                    <div class="card__wrapper">
-                    <div class="card">
+                    <a href="#" class="card">
                         <img class="card__icon" src="img/card_icon_doc.svg" alt="icon">
                         <div class="card__title">
                             Прием специалистов
@@ -90,13 +90,13 @@
                         <div class="card__text">
                             У нас ведут прием специалисты с больщим стажем работы
                         </div>
-                        <a href="#" class="card__link">
+                        <div  class="card__link">
                             подробнее
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="card__wrapper">
-                    <div class="card">
+                    <a href="#" class="card">
                         <img class="card__icon" src="img/card_icon_back.svg" alt="icon">
                         <div class="card__title">
                             Массаж
@@ -104,13 +104,13 @@
                         <div class="card__text">
                             Услуги массажиста для детей и взрослых
                         </div>
-                        <a href="#" class="card__link">
+                        <div  class="card__link">
                             подробнее
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="card__wrapper">
-                    <div class="card">
+                    <a href="#" class="card">
                         <img class="card__icon" src="img/card_icon_waist.svg" alt="icon">
                         <div class="card__title">
                             Программы с лишним весом
@@ -118,24 +118,24 @@
                         <div class="card__text">
                             Получите персональную программу похудения на основе веса, роста, возраста и привычек
                         </div>
-                        <a href="#" class="card__link">
+                        <div  class="card__link">
                             подробнее
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="card__wrapper">
-                    <div class="card">
+                    <a href="#" class="card">
                         <img class="card__icon" src="img/card_icon_flask.svg" alt="icon">
                         <div class="card__title">
-                            Процедурный кабинет с забором анализов
+                            Процедурный кабинет <span class=""> с забором анализов</span>
                         </div>
                         <div class="card__text">
                             Забор крови на различные исследования и анализы
                         </div>
-                        <a href="#" class="card__link">
+                        <div  class="card__link">
                             подробнее
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 </div>
                 <a href="services.php" class="main__services-button button">
@@ -384,9 +384,9 @@
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeb21351dc8f70088fbd9d62f3b2633d08a9516e94fb413a1ea3b6b3a10a26d39&amp;source=constructor" class="main_contacts_map" width="100%" height="778" frameborder="0"></iframe>
         <div class="container">
             <div class="main_contacts_content">
-                <div class="main_contacts_title">
+                <h2 class="main_contacts_title">
                     Контакты
-                </div>
+                </h2>
                 <div class="contacts__data_time">
                     <div class="contacts__data_title">
                         Режим работы:
@@ -447,7 +447,12 @@
                             Записаться на приём
                         </div>
                         <div class="main__registration_text">
-                            Оставьте свои данные и наш администратор свяжется с вами в ближайшее время Либо звоните по телефону <em>+7 (4012) 000-000</em>
+                            <div class="main__registration_text-top">
+                            Оставьте свои данные и наш администратор свяжется с вами в ближайшее время
+                        </div>
+                        <div class="main__registration_text-bottom">
+                            Либо звоните по телефону <em>+7 (4012) 000-000</em>
+                        </div>
                         </div>
                         <a href="#" class="main__docs_button button" data-hystmodal="#registerModal">
                             Записаться на приём
@@ -457,8 +462,9 @@
             </div>
         </div>
     </div>
+    
     <?php
     include_once($_SERVER['DOCUMENT_ROOT'].'/footer.php');
     ?>
-    <script src="/js/owl.carousel.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    
+   
